@@ -1,0 +1,6 @@
+{
+  "name": "GoLand Mobile Wireframe (iPhone 17 Pro Max)",
+  "description": "Applicazione mobile low-fidelity wireframe in bianco e nero per iPhone 17 Pro Max con 9 schermate funzionali (Sfide, GoLand, Casa, Arredi, Negozio, Diario, Profilo, Dati, Preferenze).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
