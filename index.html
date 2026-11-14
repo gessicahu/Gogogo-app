@@ -1,18 +1,4342 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoLand Mobile Wireframe (iPhone 17 Pro Max)</title>
-    <meta name="description" content="Applicazione mobile low-fidelity wireframe in bianco e nero per iPhone 17 Pro Max con 9 schermate funzionali (Sfide, GoLand, Casa, Arredi, Negozio, Diario, Profilo, Dati, Preferenze)." />
+    <meta
+      name="description"
+      content="Applicazione mobile low-fidelity wireframe in bianco e nero per iPhone 17 Pro Max con 9 schermate funzionali (Sfide, GoLand, Casa, Arredi, Negozio, Diario, Profilo, Dati, Preferenze)."
+    />
     <meta property="og:title" content="GoLand Mobile Wireframe (iPhone 17 Pro Max)" />
-    <meta property="og:description" content="Applicazione mobile low-fidelity wireframe in bianco e nero per iPhone 17 Pro Max con 9 schermate funzionali (Sfide, GoLand, Casa, Arredi, Negozio, Diario, Profilo, Dati, Preferenze)." />
+    <meta
+      property="og:description"
+      content="Applicazione mobile low-fidelity wireframe in bianco e nero per iPhone 17 Pro Max con 9 schermate funzionali (Sfide, GoLand, Casa, Arredi, Negozio, Diario, Profilo, Dati, Preferenze)."
+    />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <style id="tailwind-styles">/*! tailwindcss v4.3.5 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-neutral-50: oklch(98.5% 0 none);
+    --color-neutral-100: oklch(97% 0 none);
+    --color-neutral-200: oklch(92.2% 0 none);
+    --color-neutral-300: oklch(87% 0 none);
+    --color-neutral-400: oklch(70.8% 0 none);
+    --color-neutral-500: oklch(55.6% 0 none);
+    --color-neutral-600: oklch(43.9% 0 none);
+    --color-neutral-700: oklch(37.1% 0 none);
+    --color-neutral-800: oklch(26.9% 0 none);
+    --color-neutral-900: oklch(20.5% 0 none);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-4xl: 56rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .inset-x-0 {
+    inset-inline: 0px;
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .top-0\.5 {
+    top: calc(var(--spacing) * 0.5);
+  }
+  .top-1 {
+    top: var(--spacing);
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-28 {
+    top: calc(var(--spacing) * 28);
+  }
+  .top-32 {
+    top: calc(var(--spacing) * 32);
+  }
+  .top-44 {
+    top: calc(var(--spacing) * 44);
+  }
+  .-right-\[14px\] {
+    right: calc(14px * -1);
+  }
+  .right-0\.5 {
+    right: calc(var(--spacing) * 0.5);
+  }
+  .right-1 {
+    right: var(--spacing);
+  }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .bottom-1 {
+    bottom: var(--spacing);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .-left-\[14px\] {
+    left: calc(14px * -1);
+  }
+  .left-0\.5 {
+    left: calc(var(--spacing) * 0.5);
+  }
+  .left-1 {
+    left: var(--spacing);
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
+  }
+  .my-auto {
+    margin-block: auto;
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mr-1 {
+    margin-right: var(--spacing);
+  }
+  .mb-0\.5 {
+    margin-bottom: calc(var(--spacing) * 0.5);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .aspect-\[16\/7\] {
+    aspect-ratio: 16/7;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .h-1 {
+    height: var(--spacing);
+  }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\.5 {
+    height: calc(var(--spacing) * 3.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-\[30px\] {
+    height: 30px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-\[52px\] {
+    min-height: 52px;
+  }
+  .min-h-\[58px\] {
+    min-height: 58px;
+  }
+  .min-h-\[110px\] {
+    min-height: 110px;
+  }
+  .min-h-\[145px\] {
+    min-height: 145px;
+  }
+  .min-h-\[320px\] {
+    min-height: 320px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-1 {
+    width: var(--spacing);
+  }
+  .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
+  .w-\[4px\] {
+    width: 4px;
+  }
+  .w-\[114px\] {
+    width: 114px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-\[94vw\] {
+    max-width: 94vw;
+  }
+  .max-w-\[200px\] {
+    max-width: 200px;
+  }
+  .max-w-\[240px\] {
+    max-width: 240px;
+  }
+  .max-w-\[260px\] {
+    max-width: 260px;
+  }
+  .max-w-\[320px\] {
+    max-width: 320px;
+  }
+  .max-w-\[340px\] {
+    max-width: 340px;
+  }
+  .max-w-full {
+    max-width: 100%;
+  }
+  .min-w-0 {
+    min-width: 0px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .origin-top {
+    transform-origin: top;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-100 {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-\[0\.78\] {
+    scale: 0.78;
+  }
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+  .cursor-not-allowed {
+    cursor: not-allowed;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize-none {
+    resize: none;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-3\.5 {
+    gap: calc(var(--spacing) * 3.5);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-3\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-\[44px\] {
+    border-radius: 44px;
+  }
+  .rounded-\[52px\] {
+    border-radius: 52px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-l-md {
+    border-top-left-radius: var(--radius-md);
+    border-bottom-left-radius: var(--radius-md);
+  }
+  .rounded-r-md {
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+  .border-black {
+    border-color: var(--color-black);
+  }
+  .border-black\/40 {
+    border-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .border-black\/80 {
+    border-color: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+  }
+  .border-neutral-300 {
+    border-color: var(--color-neutral-300);
+  }
+  .border-neutral-400 {
+    border-color: var(--color-neutral-400);
+  }
+  .border-neutral-500 {
+    border-color: var(--color-neutral-500);
+  }
+  .border-neutral-800 {
+    border-color: var(--color-neutral-800);
+  }
+  .border-neutral-900 {
+    border-color: var(--color-neutral-900);
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
+  .bg-black\/80 {
+    background-color: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+  }
+  .bg-neutral-50 {
+    background-color: var(--color-neutral-50);
+  }
+  .bg-neutral-100 {
+    background-color: var(--color-neutral-100);
+  }
+  .bg-neutral-200 {
+    background-color: var(--color-neutral-200);
+  }
+  .bg-neutral-300 {
+    background-color: var(--color-neutral-300);
+  }
+  .bg-neutral-700 {
+    background-color: var(--color-neutral-700);
+  }
+  .bg-neutral-800 {
+    background-color: var(--color-neutral-800);
+  }
+  .bg-neutral-900 {
+    background-color: var(--color-neutral-900);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/80 {
+    background-color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+  }
+  .fill-none {
+    fill: none;
+  }
+  .stroke-black {
+    stroke: var(--color-black);
+  }
+  .p-0\.5 {
+    padding: calc(var(--spacing) * 0.5);
+  }
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-3\.5 {
+    padding: calc(var(--spacing) * 3.5);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-\[10px\] {
+    padding: 10px;
+  }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-1 {
+    padding-top: var(--spacing);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pl-2\.5 {
+    padding-left: calc(var(--spacing) * 2.5);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[7px\] {
+    font-size: 7px;
+  }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
+  .text-\[9px\] {
+    font-size: 9px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-neutral-300 {
+    color: var(--color-neutral-300);
+  }
+  .text-neutral-400 {
+    color: var(--color-neutral-400);
+  }
+  .text-neutral-500 {
+    color: var(--color-neutral-500);
+  }
+  .text-neutral-600 {
+    color: var(--color-neutral-600);
+  }
+  .text-neutral-700 {
+    color: var(--color-neutral-700);
+  }
+  .text-neutral-800 {
+    color: var(--color-neutral-800);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal, ) var(--tw-slashed-zero, ) var(--tw-numeric-figure, ) var(--tw-numeric-spacing, ) var(--tw-numeric-fraction, );
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
+  .opacity-15 {
+    opacity: 15%;
+  }
+  .opacity-20 {
+    opacity: 20%;
+  }
+  .opacity-25 {
+    opacity: 25%;
+  }
+  .opacity-60 {
+    opacity: 60%;
+  }
+  .shadow-\[1px_1px_0px_\#000\] {
+    --tw-shadow: 1px 1px 0px var(--tw-shadow-color, #000);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[2px_2px_0px_\#000\] {
+    --tw-shadow: 2px 2px 0px var(--tw-shadow-color, #000);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[2px_2px_0px_\#52525b\] {
+    --tw-shadow: 2px 2px 0px var(--tw-shadow-color, #52525b);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[2px_2px_0px_\#71717a\] {
+    --tw-shadow: 2px 2px 0px var(--tw-shadow-color, #71717a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[3px_3px_0px_\#000\] {
+    --tw-shadow: 3px 3px 0px var(--tw-shadow-color, #000);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[3px_3px_0px_\#52525b\] {
+    --tw-shadow: 3px 3px 0px var(--tw-shadow-color, #52525b);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[3px_3px_0px_\#71717a\] {
+    --tw-shadow: 3px 3px 0px var(--tw-shadow-color, #71717a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[4px_4px_0px_\#000\] {
+    --tw-shadow: 4px 4px 0px var(--tw-shadow-color, #000);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[6px_6px_0px_\#000\] {
+    --tw-shadow: 6px 6px 0px var(--tw-shadow-color, #000);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-2 {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-black {
+    --tw-ring-color: var(--color-black);
+  }
+  .backdrop-blur-\[2px\] {
+    --tw-backdrop-blur: blur(2px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  @media (hover: hover) {
+    :is(:where(.group):hover .group-hover\:translate-x-0\.5) {
+      --tw-translate-x: calc(var(--spacing) * 0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    :is(:where(.group):hover .group-hover\:translate-x-1) {
+      --tw-translate-x: var(--spacing);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    :is(:where(.group):hover .group-hover\:bg-black) {
+      background-color: var(--color-black);
+    }
+    :is(:where(.group):hover .group-hover\:text-white) {
+      color: var(--color-white);
+    }
+  }
+  .selection\:bg-black ::selection {
+    background-color: var(--color-black);
+  }
+  .selection\:bg-black::selection {
+    background-color: var(--color-black);
+  }
+  .selection\:text-white ::selection {
+    color: var(--color-white);
+  }
+  .selection\:text-white::selection {
+    color: var(--color-white);
+  }
+  @media (hover: hover) {
+    .hover\:border-black:hover {
+      border-color: var(--color-black);
+    }
+    .hover\:bg-neutral-50:hover {
+      background-color: var(--color-neutral-50);
+    }
+    .hover\:bg-neutral-100:hover {
+      background-color: var(--color-neutral-100);
+    }
+    .hover\:bg-neutral-200:hover {
+      background-color: var(--color-neutral-200);
+    }
+    .hover\:bg-neutral-800:hover {
+      background-color: var(--color-neutral-800);
+    }
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+  }
+  .focus\:bg-white:focus {
+    background-color: var(--color-white);
+  }
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .active\:translate-y-0\.5:active {
+    --tw-translate-y: calc(var(--spacing) * 0.5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .active\:bg-neutral-200:active {
+    background-color: var(--color-neutral-200);
+  }
+  @media (width >= 40rem) {
+    .sm\:block {
+      display: block;
+    }
+    .sm\:inline {
+      display: inline;
+    }
+    .sm\:scale-\[0\.80\] {
+      scale: 0.80;
+    }
+    .sm\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+</style>
+    <style>
+      .wireframe-dots {
+        background-image: radial-gradient(#000 1px, transparent 1px),
+          radial-gradient(#000 1px, #e5e5e5 1px);
+        background-size: 20px 20px;
+      }
+      .wireframe-blueprint {
+        background-image: linear-gradient(to right, #000 1px, transparent 1px),
+          linear-gradient(to bottom, #000 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+      .wireframe-coffee-grid {
+        background-image: radial-gradient(#000 1px, transparent 1px),
+          radial-gradient(#000 1px, #f5f5f5 1px);
+        background-size: 16px 16px;
+      }
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .animate-pop-in {
+        animation: popIn 0.15s ease-out forwards;
+      }
+      @keyframes spinSlow {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-once {
+        animation: spinSlow 0.45s linear;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="min-h-screen w-full bg-neutral-200 text-black flex flex-col items-center justify-start p-2 sm:p-6 font-sans relative overflow-x-hidden selection:bg-black selection:text-white">
+    <!-- Background blueprint grid for wireframe workbench -->
+    <div class="fixed inset-0 pointer-events-none opacity-25 wireframe-dots"></div>
+
+    <!-- Top Workbench Toolbar -->
+    <header class="relative z-20 w-full max-w-4xl bg-white border-2 border-black rounded-2xl p-3 shadow-[4px_4px_0px_#000] mb-4 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center font-bold">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+            <path d="M12 18h.01"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-xs font-mono font-black uppercase tracking-wider text-black">
+              iPhone 17 Pro Max
+            </h1>
+            <span class="text-[10px] font-mono bg-neutral-100 border border-black px-1.5 py-0.5 rounded font-bold">
+              Low-Fidelity Wireframe B&amp;W
+            </span>
+          </div>
+          <p class="text-[11px] text-neutral-600 hidden sm:block">
+            Mockup mobile interattivo a 9 pagine · Bianco e nero (HTML5 Statico)
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 ml-auto">
+        <button
+          id="btn-zoom-toggle"
+          type="button"
+          title="Adatta zoom schermo"
+          class="flex items-center gap-1.5 py-1 px-2.5 rounded-lg border border-black text-xs font-mono bg-neutral-100 hover:bg-neutral-200 transition-colors cursor-pointer"
+        >
+          <svg id="icon-zoom-in" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+            <line x1="11" x2="11" y1="8" y2="14"></line>
+            <line x1="8" x2="14" y1="11" y2="11"></line>
+          </svg>
+          <svg id="icon-zoom-out" class="w-3.5 h-3.5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+            <line x1="8" x2="14" y1="11" y2="11"></line>
+          </svg>
+          <span id="zoom-label">Zoom 100%</span>
+        </button>
+
+        <button
+          id="btn-reset-demo"
+          type="button"
+          title="Ripristina dati demo iniziali"
+          class="flex items-center gap-1.5 py-1 px-2.5 rounded-lg border border-black text-xs font-mono bg-white hover:bg-neutral-100 transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+          </svg>
+          <span class="hidden sm:inline">Reset Demo</span>
+        </button>
+      </div>
+
+      <!-- Screen quick navigator bar -->
+      <div id="quick-nav-bar" class="w-full pt-2 border-t border-neutral-300 flex flex-wrap items-center gap-1 text-xs">
+        <span class="text-[10px] font-mono text-neutral-500 uppercase whitespace-nowrap shrink-0 mr-1">
+          Naviga Schermata:
+        </span>
+        <button type="button" data-nav="sfide" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">1. Sfide</button>
+        <button type="button" data-nav="goland" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">2. GoLand</button>
+        <button type="button" data-nav="casa" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">3. Casa</button>
+        <button type="button" data-nav="arredi" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">4. Arredi</button>
+        <button type="button" data-nav="negozio" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">5. Negozio</button>
+        <button type="button" data-nav="diario" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">6. Diario</button>
+        <button type="button" data-nav="dettaglio_sfida" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">7. bere caffè</button>
+        <button type="button" data-nav="profilo" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">8. Profilo</button>
+        <button type="button" data-nav="dati" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">9. Dati</button>
+        <button type="button" data-nav="preferenze" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">10. Preferenze</button>
+        <button type="button" data-nav="notifiche" class="quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer">11. Notifiche</button>
+      </div>
+    </header>
+
+    <!-- Main iPhone 17 Pro Max Bezel Frame -->
+    <main id="phone-scale-wrapper" class="relative z-10 transition-transform origin-top scale-[0.78] sm:scale-[0.80]">
+      <div
+        style="width: 430px; height: 915px;"
+        class="relative max-w-[94vw] bg-black rounded-[52px] p-[10px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5),_0_0_0_2px_#52525b] border-4 border-neutral-900 flex flex-col overflow-hidden"
+      >
+        <!-- Outer edge hardware buttons -->
+        <div class="absolute -left-[14px] top-28 w-[4px] h-12 bg-neutral-800 rounded-l-md border border-neutral-900"></div>
+        <div class="absolute -left-[14px] top-44 w-[4px] h-12 bg-neutral-800 rounded-l-md border border-neutral-900"></div>
+        <div class="absolute -right-[14px] top-32 w-[4px] h-16 bg-neutral-800 rounded-r-md border border-neutral-900"></div>
+
+        <!-- iPhone 17 Pro Max Display Screen -->
+        <div class="w-full h-full bg-white rounded-[44px] overflow-hidden flex flex-col relative border-2 border-black">
+          <!-- iOS Status Bar with Dynamic Island -->
+          <div class="w-full h-11 bg-white shrink-0 px-6 pt-2 pb-1 flex items-center justify-between text-black relative z-40 select-none">
+            <span class="text-xs font-mono font-bold tracking-tight">09:41</span>
+
+            <!-- Dynamic Island pill -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-2 w-[114px] h-[30px] bg-black rounded-full flex items-center justify-between px-3 text-white shadow-sm">
+              <div class="w-2.5 h-2.5 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <div class="w-1 h-1 rounded-full bg-neutral-700"></div>
+              </div>
+              <div class="w-2.5 h-2.5 rounded-full bg-neutral-900 border border-neutral-800"></div>
+            </div>
+
+            <!-- Status Bar Icons -->
+            <div class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 20h.01"></path>
+                <path d="M7 20v-4"></path>
+                <path d="M12 20v-8"></path>
+                <path d="M17 20V8"></path>
+                <path d="M22 4v16"></path>
+              </svg>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20h.01"></path>
+                <path d="M2 8.82a15 15 0 0 1 20 0"></path>
+                <path d="M5 12.859a10 10 0 0 1 14 0"></path>
+                <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+              </svg>
+              <div class="w-5 h-2.5 rounded-sm border border-black p-0.5 flex items-center">
+                <div class="h-full w-full bg-black rounded-2xs"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inner App Container -->
+          <div class="w-full flex-1 flex flex-col overflow-hidden relative bg-white">
+            <!-- Persistent Top Bar -->
+            <div id="app-topbar" class="sticky top-0 z-30 w-full bg-white border-b-2 border-black px-3 py-2.5 flex items-center justify-between min-h-[52px]">
+              <div class="w-12 flex items-center justify-start">
+                <button
+                  id="topbar-back-btn"
+                  type="button"
+                  aria-label="Torna indietro"
+                  class="hidden w-9 h-9 rounded-lg border-2 border-black bg-white hover:bg-neutral-100 active:bg-neutral-200 items-center justify-center transition-colors cursor-pointer"
+                >
+                  <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m15 18-6-6 6-6"></path>
+                  </svg>
+                </button>
+                <div id="topbar-left-spacer" class="w-9 h-9"></div>
+              </div>
+
+              <div class="flex-1 text-center px-1 min-w-0">
+                <h2 id="topbar-title" class="text-base font-bold text-black tracking-tight truncate uppercase font-sans">
+                  Sfide
+                </h2>
+              </div>
+
+              <div class="w-16 flex items-center justify-end">
+                <div
+                  id="topbar-coins-badge"
+                  class="flex items-center gap-1.5 px-2 py-1 border-2 border-black rounded-full bg-neutral-50 shadow-[1px_1px_0px_#000]"
+                  title="Monete"
+                >
+                  <div class="w-4 h-4 rounded-full border border-black bg-white flex items-center justify-center">
+                    <span class="text-[10px] font-black font-mono leading-none">¢</span>
+                  </div>
+                  <span id="topbar-coins-value" class="text-xs font-mono font-bold text-black tabular-nums">65</span>
+                </div>
+                <div id="topbar-right-spacer" class="hidden w-16"></div>
+              </div>
+            </div>
+
+            <!-- Main Pages Container (Show/Hide by ID) -->
+            <div class="flex-1 flex flex-col overflow-hidden relative">
+              <!-- 1. PAGINA SFIDE -->
+              <section id="page-sfide" class="app-screen flex-1 overflow-y-auto px-4 py-4 space-y-5 bg-white text-black">
+                <div class="flex items-center justify-between border-b-2 border-black pb-2">
+                  <h2 class="text-xl font-black uppercase tracking-tight text-black font-sans">
+                    Le mie sfide
+                  </h2>
+                  <span class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    LIVELLO 1 · INIZIATO
+                  </span>
+                </div>
+
+                <!-- Hero / Accepted Challenges Area -->
+                <div id="sfide-hero-area"></div>
+
+                <!-- Categories Container -->
+                <div id="sfide-categories-area" class="space-y-5 pt-1"></div>
+              </section>
+
+              <!-- 2. PAGINA GOLAND -->
+              <section id="page-goland" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <h2 class="text-xl font-black uppercase tracking-tight text-black font-sans">
+                      Mondo GoLand
+                    </h2>
+                    <p class="text-xs font-mono text-neutral-600">
+                      Esplora territori e sblocca nuove zone
+                    </p>
+                  </div>
+                  <span class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    4 ZONE TOTALI
+                  </span>
+                </div>
+
+                <div id="goland-list" class="space-y-3.5 pt-1"></div>
+              </section>
+
+              <!-- 3. PAGINA CASA -->
+              <section id="page-casa" class="app-screen hidden flex-1 flex-col justify-between p-4 bg-white text-black overflow-y-auto">
+                <div class="border-b-2 border-black pb-2 mb-3">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                      Planimetria Casa · Wireframe
+                    </span>
+                    <span id="casa-placed-count" class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                      1 OGGETTI INSERITI
+                    </span>
+                  </div>
+                  <p class="text-xs text-neutral-600 mt-1">
+                    Visualizza gli arredi posizionati o vai al Negozio per comprarne di nuovi.
+                  </p>
+                </div>
+
+                <!-- Interactive House Room Blueprint -->
+                <div class="flex-1 min-h-[320px] border-2 border-black rounded-3xl bg-neutral-50 relative p-4 flex flex-col justify-between overflow-hidden shadow-[4px_4px_0px_#000]">
+                  <div class="absolute inset-0 opacity-20 pointer-events-none wireframe-blueprint"></div>
+
+                  <div class="relative z-10 flex items-center justify-between">
+                    <span class="text-[10px] font-mono bg-white border border-black px-2 py-0.5 rounded font-bold">
+                      STANZA_PRINCIPALE // ZONA_A
+                    </span>
+                    <span class="text-[10px] font-mono text-neutral-500">
+                      SCALA 1:50
+                    </span>
+                  </div>
+
+                  <div id="casa-room-items" class="relative z-10 my-auto py-4"></div>
+
+                  <div class="relative z-10 flex items-center justify-between pt-2 border-t border-black/40 text-[9px] font-mono text-neutral-600">
+                    <span>PORTA_INGRESSO [APERTURA 90°]</span>
+                    <span>PARETE_NORD</span>
+                  </div>
+                </div>
+
+                <!-- Bottom 2 square rounded buttons: Arredi & Negozio -->
+                <div class="pt-4">
+                  <p class="text-[11px] font-mono font-bold text-center uppercase tracking-wider text-neutral-600 mb-2">
+                    Gestione Casa &amp; Acquisti
+                  </p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <button
+                      id="btn-casa-arredi"
+                      type="button"
+                      aria-label="Apri pagina Arredi"
+                      class="flex flex-col items-center justify-center p-4 bg-white hover:bg-neutral-100 active:translate-y-0.5 border-2 border-black rounded-2xl shadow-[4px_4px_0px_#000] transition-all cursor-pointer group"
+                    >
+                      <div class="w-14 h-14 rounded-xl border-2 border-black bg-neutral-100 group-hover:bg-black group-hover:text-white flex items-center justify-center mb-2 transition-colors">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+                          <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path>
+                          <path d="M5 18v2"></path>
+                          <path d="M19 18v2"></path>
+                        </svg>
+                      </div>
+                      <span class="text-sm font-bold text-black uppercase font-mono tracking-wider">Arredi</span>
+                      <span id="casa-arredi-owned-label" class="text-[10px] font-mono text-neutral-500 mt-0.5">1 posseduti</span>
+                    </button>
+
+                    <button
+                      id="btn-casa-negozio"
+                      type="button"
+                      aria-label="Apri pagina Negozio"
+                      class="flex flex-col items-center justify-center p-4 bg-white hover:bg-neutral-100 active:translate-y-0.5 border-2 border-black rounded-2xl shadow-[4px_4px_0px_#000] transition-all cursor-pointer group"
+                    >
+                      <div class="w-14 h-14 rounded-xl border-2 border-black bg-neutral-100 group-hover:bg-black group-hover:text-white flex items-center justify-center mb-2 transition-colors">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                          <path d="M3 6h18"></path>
+                          <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                      </div>
+                      <span class="text-sm font-bold text-black uppercase font-mono tracking-wider">Negozio</span>
+                      <span class="text-[10px] font-mono text-neutral-500 mt-0.5">Compra oggetti</span>
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 4. PAGINA ARREDI -->
+              <section id="page-arredi" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                      I Tuoi Arredi
+                    </span>
+                    <p class="text-xs text-neutral-600">
+                      Tocca un oggetto per posizionarlo o toglierlo dalla Casa.
+                    </p>
+                  </div>
+                  <span id="arredi-count-badge" class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    1 ACQUISTATI
+                  </span>
+                </div>
+
+                <div id="arredi-content"></div>
+              </section>
+
+              <!-- 5. PAGINA NEGOZIO -->
+              <section id="page-negozio" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black flex-col justify-between">
+                <div>
+                  <div class="border-b-2 border-black pb-2 mb-3 flex items-center justify-between">
+                    <div>
+                      <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                        Negozio Arredi
+                      </span>
+                      <p class="text-xs text-neutral-600">
+                        Usa le tue monetine per arredare GoLand.
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-1 px-2 py-1 bg-neutral-100 border-2 border-black rounded-full font-mono text-xs font-bold shadow-[1px_1px_0px_#000]">
+                      <div class="w-3.5 h-3.5 rounded-full border border-black bg-white flex items-center justify-center text-[9px]">¢</div>
+                      <span id="negozio-coins-value">65 monete</span>
+                    </div>
+                  </div>
+
+                  <div id="negozio-feedback" class="hidden mb-3 p-2.5 bg-black text-white border-2 border-black rounded-xl text-center text-xs font-mono font-bold uppercase tracking-wider items-center justify-center gap-2"></div>
+
+                  <div id="negozio-content"></div>
+                </div>
+
+                <div id="negozio-footer-link" class="pt-4 border-t border-dashed border-neutral-300">
+                  <button
+                    id="btn-negozio-to-arredi"
+                    type="button"
+                    class="w-full py-2.5 bg-neutral-100 hover:bg-neutral-200 border-2 border-black rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-black flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <span>Vedi i tuoi Arredi ➔</span>
+                  </button>
+                </div>
+              </section>
+
+              <!-- 6. PAGINA DIARIO -->
+              <section id="page-diario" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <h2 class="text-xl font-black uppercase tracking-tight text-black font-sans">
+                      Diario Sfide
+                    </h2>
+                    <p class="text-xs font-mono text-neutral-600">
+                      Archivio fotografico delle sfide completate
+                    </p>
+                  </div>
+                  <span id="diario-count-badge" class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    2 COMPLETATE
+                  </span>
+                </div>
+
+                <div id="diario-grid"></div>
+              </section>
+
+              <!-- 7. PAGINA BERE CAFFÈ LA MATTINA (DETTAGLIO SFIDA) -->
+              <section id="page-dettaglio_sfida" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div id="dettaglio-sfida-content"></div>
+              </section>
+
+              <!-- 8. PAGINA PROFILO -->
+              <section id="page-profilo" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <h2 class="text-xl font-black uppercase tracking-tight text-black font-sans">
+                    Profilo Utente
+                  </h2>
+                  <span class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    ACCOUNT ATTIVO
+                  </span>
+                </div>
+
+                <!-- Account Card -->
+                <div class="w-full bg-white border-2 border-black rounded-3xl p-4 shadow-[4px_4px_0px_#000] relative overflow-hidden">
+                  <div class="flex items-center gap-3.5 mb-4">
+                    <div class="w-16 h-16 rounded-2xl border-2 border-black bg-neutral-100 flex items-center justify-center shrink-0 relative overflow-hidden shadow-[2px_2px_0px_#000]">
+                      <svg class="absolute inset-0 w-full h-full pointer-events-none text-neutral-300" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="100%" y2="100%" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"></line>
+                        <line x1="100%" y1="0" x2="0" y2="100%" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"></line>
+                      </svg>
+                      <svg class="w-8 h-8 text-black relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      <span class="absolute bottom-0 inset-x-0 bg-black text-white text-[7px] font-mono text-center py-0.5">
+                        AVATAR
+                      </span>
+                    </div>
+
+                    <div class="flex-1 min-w-0">
+                      <span id="profilo-card-userid" class="text-[10px] font-mono uppercase bg-neutral-100 border border-black px-1.5 py-0.5 rounded font-bold inline-block">
+                        ID: @marco_go99
+                      </span>
+                      <h3 id="profilo-card-username" class="text-base font-bold text-black mt-1 leading-snug truncate">
+                        Marco Rossi
+                      </h3>
+                      <p id="profilo-card-bio" class="text-[11px] text-neutral-600 line-clamp-1 mt-0.5">
+                        Appassionato di buone abitudini, caffè all’alba e passeggiate.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-2.5 pt-3 border-t-2 border-dashed border-neutral-300">
+                    <div class="bg-neutral-50 border border-black rounded-xl p-2.5 text-center">
+                      <span class="text-[10px] font-mono uppercase text-neutral-500 block">
+                        Monete Disponibili
+                      </span>
+                      <div class="flex items-center justify-center gap-1 font-mono font-bold text-base text-black mt-0.5">
+                        <div class="w-4 h-4 rounded-full border border-black bg-white flex items-center justify-center text-[9px]">¢</div>
+                        <span id="profilo-card-coins" class="tabular-nums">65</span>
+                      </div>
+                    </div>
+
+                    <div class="bg-neutral-50 border border-black rounded-xl p-2.5 text-center">
+                      <span class="text-[10px] font-mono uppercase text-neutral-500 block">
+                        Sfide Completate
+                      </span>
+                      <div class="flex items-center justify-center gap-1 font-mono font-bold text-base text-black mt-0.5">
+                        <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <circle cx="12" cy="8" r="6"></circle>
+                          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                        </svg>
+                        <span id="profilo-card-completed" class="tabular-nums">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 Settings Cards: Dati, Preferenze, Notifiche -->
+                <div class="space-y-3 pt-2">
+                  <span class="text-xs font-mono font-bold uppercase tracking-wider text-black block">
+                    Impostazioni Account
+                  </span>
+
+                  <button
+                    id="btn-open-dati"
+                    type="button"
+                    aria-label="Apri impostazioni Dati"
+                    class="w-full bg-white hover:bg-neutral-50 active:translate-y-0.5 border-2 border-black rounded-2xl p-4 shadow-[3px_3px_0px_#000] flex items-center justify-between text-left transition-all cursor-pointer group"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl border-2 border-black bg-neutral-100 group-hover:bg-black group-hover:text-white flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                          <polyline points="14 2 14 8 20 8"></polyline>
+                          <line x1="16" x2="8" y1="13" y2="13"></line>
+                          <line x1="16" x2="8" y1="17" y2="17"></line>
+                          <line x1="10" x2="8" y1="9" y2="9"></line>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 class="text-sm font-bold text-black uppercase font-mono tracking-wider">Dati</h3>
+                        <p class="text-xs text-neutral-600 mt-0.5">Modifica nome utente, ID e dati account</p>
+                      </div>
+                    </div>
+                    <svg class="w-5 h-5 text-black group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                  </button>
+
+                  <button
+                    id="btn-open-preferenze"
+                    type="button"
+                    aria-label="Apri impostazioni Preferenze"
+                    class="w-full bg-white hover:bg-neutral-50 active:translate-y-0.5 border-2 border-black rounded-2xl p-4 shadow-[3px_3px_0px_#000] flex items-center justify-between text-left transition-all cursor-pointer group"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl border-2 border-black bg-neutral-100 group-hover:bg-black group-hover:text-white flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <line x1="4" x2="4" y1="21" y2="14"></line>
+                          <line x1="4" x2="4" y1="10" y2="3"></line>
+                          <line x1="12" x2="12" y1="21" y2="12"></line>
+                          <line x1="12" x2="12" y1="8" y2="3"></line>
+                          <line x1="20" x2="20" y1="21" y2="16"></line>
+                          <line x1="20" x2="20" y1="12" y2="3"></line>
+                          <line x1="2" x2="6" y1="14" y2="14"></line>
+                          <line x1="10" x2="14" y1="8" y2="8"></line>
+                          <line x1="18" x2="22" y1="16" y2="16"></line>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 class="text-sm font-bold text-black uppercase font-mono tracking-wider">Preferenze</h3>
+                        <p class="text-xs text-neutral-600 mt-0.5">Abitudini, hobby e piaceri per sfide su misura</p>
+                      </div>
+                    </div>
+                    <svg class="w-5 h-5 text-black group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                  </button>
+
+                  <button
+                    id="btn-open-notifiche"
+                    type="button"
+                    aria-label="Apri impostazioni Notifiche"
+                    class="w-full bg-white hover:bg-neutral-50 active:translate-y-0.5 border-2 border-black rounded-2xl p-4 shadow-[3px_3px_0px_#000] flex items-center justify-between text-left transition-all cursor-pointer group"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl border-2 border-black bg-neutral-100 group-hover:bg-black group-hover:text-white flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 class="text-sm font-bold text-black uppercase font-mono tracking-wider">Notifiche</h3>
+                        <p class="text-xs text-neutral-600 mt-0.5">Avvisi giornalieri, scadenze e promemoria</p>
+                      </div>
+                    </div>
+                    <svg class="w-5 h-5 text-black group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                  </button>
+                </div>
+              </section>
+
+              <!-- 9. PAGINA DATI -->
+              <section id="page-dati" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                      Modifica Dati Account
+                    </span>
+                    <p class="text-xs text-neutral-600">
+                      I cambiamenti verranno aggiornati nella scheda del tuo Profilo.
+                    </p>
+                  </div>
+                  <span class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    LIVELLO 1
+                  </span>
+                </div>
+
+                <div id="dati-saved-banner" class="hidden p-3 bg-black text-white border-2 border-black rounded-xl text-center text-xs font-mono font-bold uppercase tracking-wider items-center justify-center gap-2">
+                  <span>✓ Dati della scheda account aggiornati!</span>
+                </div>
+
+                <div class="flex flex-col items-center justify-center py-2">
+                  <div class="relative w-20 h-20 rounded-2xl border-2 border-black bg-neutral-100 flex items-center justify-center overflow-hidden mb-2 shadow-[2px_2px_0px_#000]">
+                    <svg class="w-10 h-10 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <button
+                      type="button"
+                      title="Cambia avatar wireframe"
+                      aria-label="Cambia avatar wireframe"
+                      class="absolute bottom-1 right-1 w-6 h-6 rounded-lg bg-black text-white flex items-center justify-center border border-white cursor-pointer"
+                    >
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                        <circle cx="12" cy="13" r="3"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="text-[10px] font-mono text-neutral-500 uppercase">
+                    [FOTO_PROFILO_WIREFRAME]
+                  </span>
+                </div>
+
+                <form id="dati-form" class="space-y-4">
+                  <div>
+                    <label for="username-input" class="block text-xs font-mono font-bold uppercase tracking-wider text-black mb-1">
+                      Nome Utente
+                    </label>
+                    <input
+                      id="username-input"
+                      type="text"
+                      required
+                      value="Marco Rossi"
+                      class="w-full px-3 py-2.5 bg-neutral-50 border-2 border-black rounded-xl text-xs font-sans text-black focus:outline-none focus:bg-white shadow-[2px_2px_0px_#000]"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="userid-input" class="block text-xs font-mono font-bold uppercase tracking-wider text-black mb-1">
+                      ID Account
+                    </label>
+                    <input
+                      id="userid-input"
+                      type="text"
+                      required
+                      value="@marco_go99"
+                      class="w-full px-3 py-2.5 bg-neutral-50 border-2 border-black rounded-xl text-xs font-mono text-black focus:outline-none focus:bg-white shadow-[2px_2px_0px_#000]"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="bio-input" class="block text-xs font-mono font-bold uppercase tracking-wider text-black mb-1">
+                      Biografia Breve
+                    </label>
+                    <textarea
+                      id="bio-input"
+                      rows="3"
+                      class="w-full px-3 py-2 bg-neutral-50 border-2 border-black rounded-xl text-xs font-sans text-black focus:outline-none focus:bg-white shadow-[2px_2px_0px_#000] resize-none"
+                    >Appassionato di buone abitudini, caffè all’alba e passeggiate.</textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full py-3 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#71717a] active:translate-y-0.5 cursor-pointer transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Salva Modifiche Scheda</span>
+                  </button>
+                </form>
+              </section>
+
+              <!-- 10. PAGINA PREFERENZE -->
+              <section id="page-preferenze" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                      Personalizzazione Sfide
+                    </span>
+                    <p class="text-xs text-neutral-600">
+                      Scegli abitudini, hobby e piaceri per generare sfide su misura.
+                    </p>
+                  </div>
+                  <span id="preferenze-count-badge" class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    4 SCELTI
+                  </span>
+                </div>
+
+                <div id="preferenze-saved-banner" class="hidden p-2.5 bg-black text-white border-2 border-black rounded-xl text-center text-xs font-mono font-bold uppercase tracking-wider items-center justify-center gap-2">
+                  <span>✓ Preferenze salvate! Algoritmo sfide aggiornato.</span>
+                </div>
+
+                <div class="space-y-2">
+                  <span class="block text-xs font-mono font-bold uppercase tracking-wider text-black">
+                    1. I Tuoi Hobby &amp; Piaceri
+                  </span>
+                  <div id="preferenze-hobbies-list" class="flex flex-wrap gap-2"></div>
+                </div>
+
+                <div class="space-y-2 pt-2 border-t border-neutral-300">
+                  <span class="block text-xs font-mono font-bold uppercase tracking-wider text-black">
+                    2. Stile di Vita &amp; Abitudini Quotidiane
+                  </span>
+                  <div id="preferenze-lifestyle-list" class="flex flex-wrap gap-2"></div>
+                </div>
+
+                <div class="space-y-2 pt-2 border-t border-neutral-300">
+                  <span class="block text-xs font-mono font-bold uppercase tracking-wider text-black">
+                    3. Livello d’Impegno Desiderato
+                  </span>
+                  <div id="preferenze-intensity-list" class="grid grid-cols-3 gap-2"></div>
+                </div>
+
+                <div class="pt-2">
+                  <button
+                    id="btn-save-preferenze"
+                    type="button"
+                    class="w-full py-3 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#71717a] active:translate-y-0.5 cursor-pointer transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Salva Preferenze</span>
+                  </button>
+                </div>
+              </section>
+
+              <!-- 11. PAGINA NOTIFICHE -->
+              <section id="page-notifiche" class="app-screen hidden flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-white text-black">
+                <div class="border-b-2 border-black pb-2 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-black">
+                      Gestione Avvisi
+                    </span>
+                    <p class="text-xs text-neutral-600">
+                      Configura notifiche push e promemoria sfide quotidiane.
+                    </p>
+                  </div>
+                  <span class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 font-bold">
+                    PUSH ATTIVE
+                  </span>
+                </div>
+
+                <div id="notifiche-saved-banner" class="hidden p-2.5 bg-black text-white border-2 border-black rounded-xl text-center text-xs font-mono font-bold uppercase tracking-wider items-center justify-center gap-2">
+                  <span>✓ Impostazioni notifiche salvate!</span>
+                </div>
+
+                <div id="notifiche-switches" class="space-y-3"></div>
+
+                <div class="p-3 border-2 border-black rounded-2xl bg-neutral-50 shadow-[2px_2px_0px_#000]">
+                  <label for="reminder-time-input" class="block text-xs font-mono font-bold uppercase tracking-wider text-black mb-1">
+                    Orario Preferito del Promemoria
+                  </label>
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <input
+                      id="reminder-time-input"
+                      type="time"
+                      value="08:30"
+                      class="px-3 py-1.5 bg-white border-2 border-black rounded-xl text-xs font-mono font-bold text-black"
+                    />
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <button
+                    id="btn-save-notifiche"
+                    type="button"
+                    class="w-full py-3 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#71717a] active:translate-y-0.5 cursor-pointer transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Salva Impostazioni</span>
+                  </button>
+                </div>
+              </section>
+            </div>
+
+            <!-- Persistent Bottom Navigation Bar (Sfide, GoLand, Diario, Profilo) -->
+            <nav
+              id="bottom-nav-bar"
+              aria-label="Navigazione principale"
+              class="sticky bottom-0 z-30 w-full bg-white border-t-2 border-black grid grid-cols-4 items-center px-2 py-1.5 min-h-[58px]"
+            >
+              <button
+                type="button"
+                data-tab="sfide"
+                aria-label="Sfide"
+                class="bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mb-0.5">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"></polyline>
+                    <line x1="13" x2="19" y1="19" y2="13"></line>
+                    <line x1="16" x2="20" y1="16" y2="20"></line>
+                    <line x1="19" x2="21" y1="21" y2="19"></line>
+                    <polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"></polyline>
+                    <line x1="5" x2="9" y1="14" y2="18"></line>
+                    <line x1="7" x2="4" y1="17" y2="20"></line>
+                    <line x1="3" x2="5" y1="19" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="tab-label text-[11px] tracking-tight leading-none truncate max-w-full">Sfide</span>
+              </button>
+
+              <button
+                type="button"
+                data-tab="goland"
+                aria-label="GoLand"
+                class="bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mb-0.5">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="tab-label text-[11px] tracking-tight leading-none truncate max-w-full">GoLand</span>
+              </button>
+
+              <button
+                type="button"
+                data-tab="diario"
+                aria-label="Diario"
+                class="bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mb-0.5">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <span class="tab-label text-[11px] tracking-tight leading-none truncate max-w-full">Diario</span>
+              </button>
+
+              <button
+                type="button"
+                data-tab="profilo"
+                aria-label="Profilo"
+                class="bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mb-0.5">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <span class="tab-label text-[11px] tracking-tight leading-none truncate max-w-full">Profilo</span>
+              </button>
+            </nav>
+
+            <!-- MODAL 1: Available Challenge Detail Popup (inside iPhone screen or viewport) -->
+            <div
+              id="modal-challenge-detail"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-challenge-title"
+              class="hidden fixed inset-0 z-50 items-center justify-center p-4 bg-black/60 backdrop-blur-[2px]"
+            >
+              <div class="relative w-full max-w-[340px] bg-white border-2 border-black rounded-2xl shadow-[6px_6px_0px_#000] p-5 overflow-hidden animate-pop-in">
+                <div class="flex items-center justify-between pb-3 mb-3 border-b-2 border-black">
+                  <span id="modal-challenge-cat" class="text-[10px] font-mono uppercase bg-neutral-200 border border-black px-1.5 py-0.5 font-bold">
+                    POP-UP // GIORNALIERE
+                  </span>
+                  <div class="flex items-center gap-1">
+                    <button
+                      id="btn-toggle-popup-error"
+                      type="button"
+                      title="Testa stato errore / icona di rinvio"
+                      class="text-[10px] font-mono border border-black px-1.5 py-0.5 rounded bg-neutral-100 hover:bg-neutral-200 cursor-pointer"
+                    >
+                      Simula Errore
+                    </button>
+                    <button
+                      id="btn-close-detail-modal"
+                      type="button"
+                      aria-label="Chiudi popup"
+                      class="w-7 h-7 rounded border border-black flex items-center justify-center hover:bg-neutral-100 cursor-pointer"
+                    >
+                      <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Error / Retry State -->
+                <div id="popup-error-view" class="hidden py-8 flex-col items-center justify-center text-center">
+                  <div class="w-12 h-12 rounded-full border-2 border-black bg-neutral-100 flex items-center justify-center mb-3">
+                    <svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" x2="12" y1="8" y2="12"></line>
+                      <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                    </svg>
+                  </div>
+                  <p class="text-xs font-mono text-neutral-600 mb-4 px-2">
+                    Errore di caricamento del pop-up e malfunzionamento del bottone.
+                  </p>
+                  <button
+                    id="btn-popup-retry"
+                    type="button"
+                    aria-label="Riprova caricamento"
+                    class="w-14 h-14 rounded-2xl border-2 border-black bg-black text-white hover:bg-neutral-800 flex items-center justify-center shadow-[3px_3px_0px_#71717a] active:translate-y-0.5 transition-transform cursor-pointer"
+                  >
+                    <svg id="icon-retry-spin" class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
+                      <path d="M21 3v5h-5"></path>
+                    </svg>
+                  </button>
+                  <span class="text-[10px] font-mono font-bold mt-2 uppercase tracking-wider">
+                    Premi per rinvio
+                  </span>
+                </div>
+
+                <!-- Normal Content State -->
+                <div id="popup-normal-view">
+                  <div class="mb-4">
+                    <h2 id="modal-challenge-title" class="text-base font-bold text-black tracking-tight mb-2 leading-snug">
+                      Sfida
+                    </h2>
+                    <p id="modal-challenge-desc" class="text-xs font-normal text-neutral-700 leading-relaxed border-l-2 border-black pl-2.5 py-0.5 bg-neutral-50 mb-3"></p>
+
+                    <div class="relative w-full border-2 border-dashed border-black/80 bg-neutral-100 flex items-center justify-center overflow-hidden aspect-[16/7] rounded-lg mb-3">
+                      <svg class="absolute inset-0 w-full h-full pointer-events-none text-neutral-300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <line x1="0" y1="0" x2="100%" y2="100%" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"></line>
+                        <line x1="100%" y1="0" x2="0" y2="100%" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"></line>
+                      </svg>
+                      <div class="relative z-10 px-2 py-1 bg-white border border-black text-[11px] font-mono tracking-wider font-semibold text-black uppercase">
+                        [ SCHEMA_SFIDA ]
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-between text-xs font-mono bg-neutral-100 border border-black p-2 rounded-lg">
+                      <span class="font-medium text-neutral-800">Ricompensa:</span>
+                      <div class="flex items-center gap-1 font-bold">
+                        <div class="w-3.5 h-3.5 rounded-full border border-black bg-white flex items-center justify-center text-[9px]">¢</div>
+                        <span id="modal-challenge-reward">+15 monetine</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col items-center justify-center pt-2">
+                    <button
+                      id="btn-accept-challenge"
+                      type="button"
+                      class="w-full py-2.5 px-4 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#52525b] active:translate-y-0.5 cursor-pointer transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>accetta la sfida</span>
+                    </button>
+                    <div
+                      id="accepted-feedback-badge"
+                      class="hidden w-full py-2.5 bg-black text-white border-2 border-black rounded-xl text-center font-bold text-xs items-center justify-center gap-2"
+                    >
+                      <span>✓ Sfida accettata!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MODAL 2: Accepted Challenge (Photo / Cancel) -->
+            <div
+              id="modal-accepted-challenge"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-accepted-title"
+              class="hidden fixed inset-0 z-50 items-center justify-center p-4 bg-black/60 backdrop-blur-[2px]"
+            >
+              <div class="relative w-full max-w-[340px] bg-white border-2 border-black rounded-2xl shadow-[6px_6px_0px_#000] p-5 overflow-hidden animate-pop-in">
+                <div class="flex items-center justify-between pb-3 mb-3 border-b-2 border-black">
+                  <span class="text-[10px] font-mono uppercase bg-black text-white px-2 py-0.5 rounded font-bold">
+                    SFIDA IN CORSO
+                  </span>
+                  <button
+                    id="btn-close-accepted-modal"
+                    type="button"
+                    aria-label="Chiudi popup"
+                    class="w-7 h-7 rounded border border-black flex items-center justify-center hover:bg-neutral-100 cursor-pointer"
+                  >
+                    <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Cancel Feedback View -->
+                <div id="accepted-cancel-view" class="hidden py-8 flex-col items-center justify-center text-center">
+                  <div class="w-12 h-12 rounded-full border-2 border-black bg-neutral-100 flex items-center justify-center mb-2">
+                    <span class="text-lg font-bold">✓</span>
+                  </div>
+                  <p class="text-sm font-bold text-black uppercase tracking-wider">Annullo riuscito</p>
+                  <span class="text-[11px] font-mono text-neutral-500 mt-1">
+                    La scheda ritornerà al posto di prima.
+                  </span>
+                </div>
+
+                <!-- Main Accepted Content -->
+                <div id="accepted-main-view">
+                  <h2 id="modal-accepted-title" class="text-base font-bold text-black tracking-tight mb-1"></h2>
+                  <p id="modal-accepted-desc" class="text-xs text-neutral-600 mb-3 leading-relaxed"></p>
+
+                  <!-- Step A: Actions -->
+                  <div id="accepted-step-actions" class="space-y-2.5">
+                    <button
+                      id="btn-open-camera"
+                      type="button"
+                      class="w-full py-3 px-4 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#52525b] active:translate-y-0.5 cursor-pointer transition-all flex items-center justify-center gap-2"
+                    >
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                        <circle cx="12" cy="13" r="3"></circle>
+                      </svg>
+                      <span>Scatta foto per completare</span>
+                    </button>
+
+                    <button
+                      id="btn-cancel-accepted"
+                      type="button"
+                      class="w-full py-2 px-4 bg-white text-neutral-700 hover:bg-neutral-100 border-2 border-black rounded-xl font-semibold text-xs tracking-wide cursor-pointer transition-all flex items-center justify-center gap-1.5"
+                    >
+                      <span>Annulla la sfida</span>
+                    </button>
+                  </div>
+
+                  <!-- Step B: Camera Viewfinder -->
+                  <div id="accepted-step-camera" class="hidden bg-black text-white p-3 rounded-xl border-2 border-black mb-1 text-center">
+                    <div class="relative h-40 border border-dashed border-neutral-400 rounded-lg flex flex-col items-center justify-center mb-3 overflow-hidden bg-neutral-900">
+                      <div class="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-white"></div>
+                      <div class="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-white"></div>
+                      <div class="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-white"></div>
+                      <div class="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-white"></div>
+                      <div class="w-6 h-6 rounded-full border border-white flex items-center justify-center opacity-60">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                      </div>
+                      <span class="text-[10px] font-mono mt-2 text-neutral-300">INQUADRA E SCATTA</span>
+                    </div>
+
+                    <div class="flex gap-2 justify-center">
+                      <button
+                        id="btn-snap-photo"
+                        type="button"
+                        class="py-2 px-4 bg-white text-black font-bold text-xs rounded-lg uppercase tracking-wider flex items-center gap-1.5 hover:bg-neutral-200 cursor-pointer"
+                      >
+                        <span>Scatta</span>
+                      </button>
+                      <button
+                        id="btn-cancel-camera"
+                        type="button"
+                        class="py-2 px-3 border border-neutral-500 text-neutral-300 text-xs rounded-lg hover:text-white cursor-pointer"
+                      >
+                        Annulla vista
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Step C: Captured Confirmation -->
+                  <div id="accepted-step-confirm" class="hidden border-2 border-black rounded-xl p-3 bg-neutral-50">
+                    <div class="h-32 bg-white border border-black rounded-lg flex flex-col items-center justify-center relative mb-2 overflow-hidden">
+                      <div class="w-10 h-10 rounded-full border-2 border-black bg-neutral-100 flex items-center justify-center mb-1">
+                        <span class="font-bold">✓</span>
+                      </div>
+                      <span class="text-xs font-mono font-bold uppercase text-black">FOTO_ACQUISITA.RAW</span>
+                      <span class="text-[10px] font-mono text-neutral-500">Pronta per l’invio al Diario</span>
+                    </div>
+
+                    <button
+                      id="btn-confirm-completion"
+                      type="button"
+                      class="w-full py-2.5 bg-black text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 flex items-center justify-center gap-2 shadow-[2px_2px_0px_#52525b] cursor-pointer"
+                    >
+                      <span id="confirm-completion-label">Conferma e guadagna +15 monete</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MODAL 3: Unlock Land Popup -->
+            <div
+              id="modal-unlock-land"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-unlock-title"
+              class="hidden fixed inset-0 z-50 items-center justify-center p-4 bg-black/60 backdrop-blur-[2px]"
+            >
+              <div class="relative w-full max-w-[320px] bg-white border-2 border-black rounded-2xl shadow-[6px_6px_0px_#000] p-5 animate-pop-in">
+                <div class="flex items-center justify-between pb-2 mb-3 border-b-2 border-black">
+                  <span class="text-[10px] font-mono uppercase bg-neutral-100 border border-black px-1.5 py-0.5 font-bold">
+                    SBLOCCA TERRENO
+                  </span>
+                  <button
+                    id="btn-close-unlock-modal"
+                    type="button"
+                    aria-label="Chiudi popup"
+                    class="w-7 h-7 rounded border border-black flex items-center justify-center hover:bg-neutral-100 cursor-pointer"
+                  >
+                    <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="flex flex-col items-center text-center my-3">
+                  <div class="w-14 h-14 rounded-2xl border-2 border-black bg-neutral-100 flex items-center justify-center mb-3">
+                    <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </div>
+                  <h2 id="modal-unlock-title" class="text-base font-bold text-black mb-1"></h2>
+                  <p id="modal-unlock-desc" class="text-xs text-neutral-600 mb-4 px-2"></p>
+
+                  <div class="w-full bg-neutral-100 border border-black rounded-xl p-2.5 mb-4 flex items-center justify-between text-xs font-mono">
+                    <span>Costo di sblocco:</span>
+                    <div class="flex items-center gap-1 font-bold">
+                      <div class="w-4 h-4 rounded-full border border-black bg-white flex items-center justify-center text-[10px]">¢</div>
+                      <span id="modal-unlock-cost">40 monete</span>
+                    </div>
+                  </div>
+
+                  <div id="modal-unlock-actions" class="w-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- iOS Home Indicator Bar -->
+          <div class="w-full h-6 bg-white shrink-0 flex items-center justify-center pb-1 relative z-40 select-none">
+            <div class="w-32 h-1 bg-black/80 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Specs Note -->
+    <footer class="relative z-10 text-center py-4 text-xs font-mono text-neutral-600">
+      Wireframe Low-Fidelity · Specifica iPhone 17 Pro Max · Tutti i pulsanti sono interattivi (Single-File HTML5)
+    </footer>
+
+    <!-- Vanilla JavaScript Application Logic -->
+    <script>
+      (function () {
+        'use strict';
+
+        /* =========================================================
+         * 1. INITIAL DEMO DATA
+         * ========================================================= */
+        function createInitialState() {
+          return {
+            currentPage: 'sfide',
+            activeMainTab: 'sfide',
+            selectedDiaryEntryId: 'diary-coffee-default',
+            selectedAvailableChallengeId: null,
+            selectedAcceptedChallengeId: null,
+            selectedLockedLandId: null,
+            zoomFit: true,
+            challenges: [
+              {
+                id: 'ch-coffee',
+                title: 'bere caffè la mattina',
+                description:
+                  'Bevi una tazza di caffè o tè caldo appena sveglio per ricaricare le energie e iniziare la giornata con positività.',
+                category: 'giornaliere',
+                rewardCoins: 10,
+                status: 'completed',
+              },
+              {
+                id: 'ch-water',
+                title: 'Bere 2 litri d’acqua',
+                description:
+                  'Mantieni l’idratazione ottimale durante tutto l’arco della giornata bevendo almeno due litri d’acqua.',
+                category: 'giornaliere',
+                rewardCoins: 15,
+                status: 'available',
+              },
+              {
+                id: 'ch-read',
+                title: 'Leggere 15 pagine',
+                description:
+                  'Dedica almeno 15 minuti alla lettura di un buon libro prima di andare a dormire.',
+                category: 'giornaliere',
+                rewardCoins: 15,
+                status: 'available',
+              },
+              {
+                id: 'ch-run',
+                title: 'Corsa di 5 km',
+                description:
+                  'Completa una sessione di corsa o camminata veloce di almeno 5 chilometri durante la settimana.',
+                category: 'settimanali',
+                rewardCoins: 35,
+                status: 'available',
+              },
+              {
+                id: 'ch-cooking',
+                title: 'Cucinare una ricetta sana',
+                description:
+                  'Sperimenta una ricetta vegetariana o ricca di nutrienti fatta completamente in casa.',
+                category: 'settimanali',
+                rewardCoins: 30,
+                status: 'available',
+              },
+              {
+                id: 'ch-cleanup',
+                title: 'Decluttering della camera',
+                description:
+                  'Riordina e organizza l’armadio o la tua postazione di lavoro eliminando il superfluo.',
+                category: 'settimanali',
+                rewardCoins: 40,
+                status: 'available',
+              },
+              {
+                id: 'ch-museum',
+                title: 'Visita a una mostra o museo',
+                description:
+                  'Trascorri un pomeriggio culturale visitando una galleria d’arte o un museo della tua città.',
+                category: 'mensili',
+                rewardCoins: 80,
+                status: 'available',
+              },
+              {
+                id: 'ch-digital-detox',
+                title: 'Weekend Digital Detox',
+                description:
+                  'Trascorri 24 ore consecutive senza social network e schermi per riconnetterti con la realtà.',
+                category: 'mensili',
+                rewardCoins: 100,
+                status: 'available',
+              },
+            ],
+            diaryEntries: [
+              {
+                id: 'diary-coffee-default',
+                challengeId: 'ch-coffee',
+                title: 'bere caffè la mattina',
+                description:
+                  'Bevi una tazza di caffè appena sveglio per ricaricare le energie e iniziare la giornata con positività.',
+                completedAt: '12 Nov 2026 · 08:15',
+                rewardCoins: 10,
+              },
+              {
+                id: 'diary-walk-sample',
+                challengeId: 'ch-sample-walk',
+                title: 'Passeggiata mattutina al parco',
+                description:
+                  'Fatta una camminata rigenerante tra i vialetti alberati all’alba.',
+                completedAt: '10 Nov 2026 · 07:45',
+                rewardCoins: 20,
+              },
+            ],
+            lands: [
+              {
+                id: 1,
+                name: 'Casa',
+                isUnlocked: true,
+                unlockCost: 0,
+                description:
+                  'La tua dimora principale: arreda la stanza con gli oggetti del negozio.',
+              },
+              {
+                id: 2,
+                name: 'Giardino Botanico',
+                isUnlocked: false,
+                unlockCost: 40,
+                description:
+                  'Un’oasi verde rilassante con piante esotiche e una fontana in pietra.',
+              },
+              {
+                id: 3,
+                name: 'Studio Creativo',
+                isUnlocked: false,
+                unlockCost: 75,
+                description:
+                  'Laboratorio per idee, pittura e nuove sfide intellettuali.',
+              },
+              {
+                id: 4,
+                name: 'Osservatorio Stelle',
+                isUnlocked: false,
+                unlockCost: 120,
+                description:
+                  'Cupola panoramica con telescopio per osservare le costellazioni.',
+              },
+            ],
+            negozio: [
+              { id: 'furn-sofa', name: 'Divano Wireframe 3 Posti', cost: 25 },
+              { id: 'furn-plant', name: 'Pianta Monstera in Vaso', cost: 15 },
+              { id: 'furn-lamp', name: 'Lampada da Terra Minimal', cost: 20 },
+              { id: 'furn-desk', name: 'Scrivania da Lavoro in Legno', cost: 35 },
+              { id: 'furn-clock', name: 'Orologio da Parete Bauhaus', cost: 10 },
+              { id: 'furn-bookshelf', name: 'Libreria Modulare a Parete', cost: 30 },
+            ],
+            arredi: [
+              {
+                id: 'furn-tappeto',
+                name: 'Tappeto Geometrico',
+                cost: 15,
+                isPlacedInCasa: true,
+              },
+            ],
+            profile: {
+              username: 'Marco Rossi',
+              userId: '@marco_go99',
+              coins: 65,
+              completedChallengesCount: 2,
+              bio: 'Appassionato di buone abitudini, caffè all’alba e passeggiate.',
+            },
+            preferences: {
+              hobbies: ['Lettura', 'Fitness', 'Cucina sana', 'Fotografia'],
+              lifestyle: ['Sveglia presto', 'Outdoor & Natura'],
+              challengeIntensity: 'media',
+            },
+            notifications: {
+              dailyReminders: true,
+              challengeDeadlines: true,
+              unlockAlerts: true,
+              notificationTime: '08:30',
+            },
+          };
+        }
+
+        let state = createInitialState();
+
+        /* =========================================================
+         * 2. HELPERS & SVG TEMPLATES
+         * ========================================================= */
+        function escapeHtml(str) {
+          return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        const MAIN_TABS = ['sfide', 'goland', 'diario', 'profilo'];
+        const PAGE_IDS = [
+          'sfide',
+          'goland',
+          'casa',
+          'arredi',
+          'negozio',
+          'diario',
+          'dettaglio_sfida',
+          'profilo',
+          'dati',
+          'preferenze',
+          'notifiche',
+        ];
+
+        const AVAILABLE_HOBBIES = [
+          'Lettura',
+          'Fitness',
+          'Cucina sana',
+          'Fotografia',
+          'Meditazione',
+          'Corsa',
+          'Pittura',
+          'Giardinaggio',
+          'Digital Detox',
+          'Musica',
+        ];
+
+        const AVAILABLE_LIFESTYLE = [
+          'Sveglia presto',
+          'Outdoor & Natura',
+          'Focus Studio/Lavoro',
+          'Sociale & Amici',
+          'Minimalismo',
+        ];
+
+        function navigateTo(pageId) {
+          state.currentPage = pageId;
+          if (MAIN_TABS.indexOf(pageId) !== -1) {
+            state.activeMainTab = pageId;
+          }
+          renderAll();
+        }
+
+        function navigateBack() {
+          switch (state.currentPage) {
+            case 'casa':
+              navigateTo('goland');
+              break;
+            case 'arredi':
+            case 'negozio':
+              navigateTo('casa');
+              break;
+            case 'dettaglio_sfida':
+              navigateTo('diario');
+              break;
+            case 'dati':
+            case 'preferenze':
+            case 'notifiche':
+              navigateTo('profilo');
+              break;
+            default:
+              navigateTo('sfide');
+          }
+        }
+
+        /* =========================================================
+         * 3. RENDER FUNCTIONS
+         * ========================================================= */
+        function renderChrome() {
+          // Show/Hide screen sections by ID
+          PAGE_IDS.forEach(function (pid) {
+            const el = document.getElementById('page-' + pid);
+            if (!el) return;
+            if (pid === state.currentPage) {
+              el.classList.remove('hidden');
+              if (pid === 'casa' || pid === 'negozio') {
+                el.classList.add('flex');
+              }
+            } else {
+              el.classList.add('hidden');
+              el.classList.remove('flex');
+            }
+          });
+
+          // Quick Nav active state
+          document.querySelectorAll('.quick-nav-btn').forEach(function (btn) {
+            const target = btn.getAttribute('data-nav');
+            if (target === state.currentPage) {
+              btn.className =
+                'quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer bg-black text-white border-black font-bold';
+            } else {
+              btn.className =
+                'quick-nav-btn px-2 py-0.5 rounded-md border text-[11px] font-mono whitespace-nowrap shrink-0 transition-colors cursor-pointer bg-white text-neutral-700 border-neutral-300 hover:border-black';
+            }
+          });
+
+          // TopBar title, back arrow, and coin counter
+          const isMainTab = MAIN_TABS.indexOf(state.currentPage) !== -1;
+          const showCoins =
+            state.currentPage === 'sfide' || state.currentPage === 'goland';
+
+          const backBtn = document.getElementById('topbar-back-btn');
+          const leftSpacer = document.getElementById('topbar-left-spacer');
+          if (!isMainTab) {
+            backBtn.classList.remove('hidden');
+            backBtn.classList.add('flex');
+            leftSpacer.classList.add('hidden');
+          } else {
+            backBtn.classList.add('hidden');
+            backBtn.classList.remove('flex');
+            leftSpacer.classList.remove('hidden');
+          }
+
+          const titleMap = {
+            sfide: 'Sfide',
+            goland: 'GoLand',
+            diario: 'Diario',
+            profilo: 'Profilo',
+            casa: 'Casa',
+            arredi: 'Arredi',
+            negozio: 'Negozio',
+            dati: 'Dati',
+            preferenze: 'Preferenze',
+            notifiche: 'Notifiche',
+          };
+
+          let titleText = titleMap[state.currentPage] || '';
+          if (state.currentPage === 'dettaglio_sfida') {
+            const selected =
+              state.diaryEntries.find(function (d) {
+                return d.id === state.selectedDiaryEntryId;
+              }) || state.diaryEntries[0];
+            titleText = selected ? selected.title : 'bere caffè la mattina';
+          }
+          document.getElementById('topbar-title').textContent = titleText;
+
+          const coinsBadge = document.getElementById('topbar-coins-badge');
+          const rightSpacer = document.getElementById('topbar-right-spacer');
+          document.getElementById('topbar-coins-value').textContent = String(
+            state.profile.coins
+          );
+          coinsBadge.setAttribute('title', 'Monete: ' + state.profile.coins);
+
+          if (showCoins) {
+            coinsBadge.classList.remove('hidden');
+            coinsBadge.classList.add('flex');
+            rightSpacer.classList.add('hidden');
+          } else {
+            coinsBadge.classList.add('hidden');
+            coinsBadge.classList.remove('flex');
+            rightSpacer.classList.remove('hidden');
+          }
+
+          // BottomNavBar visibility & active tab
+          const bottomNav = document.getElementById('bottom-nav-bar');
+          if (isMainTab) {
+            bottomNav.classList.remove('hidden');
+            bottomNav.classList.add('grid');
+          } else {
+            bottomNav.classList.add('hidden');
+            bottomNav.classList.remove('grid');
+          }
+
+          document.querySelectorAll('.bottom-tab-btn').forEach(function (btn) {
+            const tab = btn.getAttribute('data-tab');
+            const labelEl = btn.querySelector('.tab-label');
+            const isActive = state.activeMainTab === tab;
+            if (isActive) {
+              btn.setAttribute('aria-current', 'page');
+              btn.className =
+                'bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none bg-black text-white font-bold shadow-[2px_2px_0px_#71717a]';
+              labelEl.className =
+                'tab-label text-[11px] tracking-tight leading-none truncate max-w-full font-bold underline underline-offset-2';
+            } else {
+              btn.removeAttribute('aria-current');
+              btn.className =
+                'bottom-tab-btn flex flex-col items-center justify-center py-1 px-1 rounded-xl transition-all cursor-pointer select-none bg-transparent text-black hover:bg-neutral-100 font-medium';
+              labelEl.className =
+                'tab-label text-[11px] tracking-tight leading-none truncate max-w-full font-normal';
+            }
+          });
+        }
+
+        function renderSfidePage() {
+          const heroArea = document.getElementById('sfide-hero-area');
+          const catArea = document.getElementById('sfide-categories-area');
+
+          const accepted = state.challenges.filter(function (c) {
+            return c.status === 'accepted';
+          });
+
+          if (accepted.length === 0) {
+            heroArea.innerHTML =
+              '<div class="w-full border-2 border-dashed border-black rounded-2xl p-5 text-center bg-neutral-50 flex flex-col items-center justify-center min-h-[110px]">' +
+              '<span class="text-sm font-mono font-bold uppercase tracking-wider text-black">Let’s Go! Inizia una nuova sfida</span>' +
+              '<p class="text-xs font-mono text-neutral-500 mt-1 max-w-[260px]">Scegli una sfida tra giornaliere, settimanali o mensili qui sotto per cominciare.</p>' +
+              '</div>';
+          } else {
+            let cardsHtml =
+              '<div class="space-y-2">' +
+              '<div class="flex items-center justify-between">' +
+              '<span class="text-xs font-mono font-bold uppercase tracking-wide text-black flex items-center gap-1.5">' +
+              '<span class="w-2 h-2 rounded-full bg-black inline-block"></span>' +
+              'Sfida Accettata (Tocca per scattare foto o annullare):</span>' +
+              '<span class="text-[10px] font-mono bg-black text-white px-1.5 py-0.5 rounded font-bold">' +
+              accepted.length +
+              ' ATTIVA</span>' +
+              '</div>';
+
+            accepted.forEach(function (ch) {
+              cardsHtml +=
+                '<button type="button" data-accepted-id="' +
+                escapeHtml(ch.id) +
+                '" aria-label="Sfida attiva: ' +
+                escapeHtml(ch.title) +
+                '. Clicca per completare o annullare." ' +
+                'class="sfida-accepted-card w-full bg-neutral-100 border-2 border-black rounded-2xl p-3.5 shadow-[4px_4px_0px_#000] hover:bg-neutral-200 active:translate-y-0.5 transition-all cursor-pointer text-left flex items-center justify-between gap-3">' +
+                '<div class="flex-1 min-w-0">' +
+                '<div class="flex items-center gap-2 mb-1">' +
+                '<span class="text-[10px] font-mono font-bold uppercase bg-black text-white px-2 py-0.5 rounded">In Corso</span>' +
+                '<span class="text-xs font-mono text-neutral-600 font-semibold">+' +
+                ch.rewardCoins +
+                ' monete</span>' +
+                '</div>' +
+                '<h3 class="text-sm font-bold text-black leading-tight">' +
+                escapeHtml(ch.title) +
+                '</h3>' +
+                '<p class="text-xs text-neutral-700 line-clamp-1 mt-0.5">' +
+                escapeHtml(ch.description) +
+                '</p>' +
+                '</div>' +
+                '<div class="w-10 h-10 rounded-xl border-2 border-black bg-white flex flex-col items-center justify-center shrink-0">' +
+                '<svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+                '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>' +
+                '<circle cx="12" cy="13" r="3"></circle>' +
+                '</svg>' +
+                '</div>' +
+                '</button>';
+            });
+
+            cardsHtml += '</div>';
+            heroArea.innerHTML = cardsHtml;
+          }
+
+          const categories = [
+            { key: 'giornaliere', label: 'Sfide giornaliere' },
+            { key: 'settimanali', label: 'Sfide settimanali' },
+            { key: 'mensili', label: 'Sfide mensili' },
+          ];
+
+          let catsHtml = '';
+          categories.forEach(function (cat) {
+            const list = state.challenges.filter(function (c) {
+              return c.category === cat.key && c.status === 'available';
+            });
+
+            catsHtml +=
+              '<div class="space-y-2.5">' +
+              '<div class="flex items-center gap-2 pb-1 border-b border-neutral-300">' +
+              '<h3 class="text-xs font-mono font-bold uppercase tracking-wider text-black">' +
+              escapeHtml(cat.label) +
+              '</h3>' +
+              '<span class="text-[10px] font-mono text-neutral-500 ml-auto">' +
+              list.length +
+              ' disponibili</span>' +
+              '</div>';
+
+            if (list.length === 0) {
+              catsHtml +=
+                '<div class="p-3 border border-dashed border-neutral-400 rounded-xl text-center text-xs font-mono text-neutral-500 bg-neutral-50">Nessuna sfida disponibile al momento.</div>';
+            } else {
+              catsHtml += '<div class="space-y-2">';
+              list.forEach(function (ch) {
+                catsHtml +=
+                  '<button type="button" data-available-id="' +
+                  escapeHtml(ch.id) +
+                  '" aria-label="Sfida: ' +
+                  escapeHtml(ch.title) +
+                  '. Clicca per visualizzare i dettagli." ' +
+                  'class="sfida-available-card w-full bg-white border-2 border-black rounded-2xl p-3 shadow-[2px_2px_0px_#000] hover:bg-neutral-50 active:translate-y-0.5 transition-all cursor-pointer text-left flex items-center justify-between gap-3 group">' +
+                  '<div class="flex-1 min-w-0">' +
+                  '<div class="flex items-center gap-1.5 mb-1">' +
+                  '<span class="text-[10px] font-mono uppercase bg-neutral-100 border border-black px-1.5 py-0.5 rounded font-bold">' +
+                  escapeHtml(cat.key) +
+                  '</span>' +
+                  '<span class="text-xs font-mono font-bold text-black">+' +
+                  ch.rewardCoins +
+                  ' ¢</span>' +
+                  '</div>' +
+                  '<h4 class="text-xs font-bold text-black leading-snug">' +
+                  escapeHtml(ch.title) +
+                  '</h4>' +
+                  '<p class="text-[11px] text-neutral-600 line-clamp-1 mt-0.5">' +
+                  escapeHtml(ch.description) +
+                  '</p>' +
+                  '</div>' +
+                  '<div class="w-8 h-8 rounded-lg border border-black bg-neutral-100 flex items-center justify-center shrink-0 group-hover:bg-black group-hover:text-white transition-colors">' +
+                  '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>' +
+                  '</div>' +
+                  '</button>';
+              });
+              catsHtml += '</div>';
+            }
+            catsHtml += '</div>';
+          });
+
+          catArea.innerHTML = catsHtml;
+        }
+
+        function renderGoLandPage() {
+          const container = document.getElementById('goland-list');
+          let html = '';
+
+          state.lands.forEach(function (land, index) {
+            if (index === 0) {
+              html +=
+                '<button type="button" id="btn-goland-open-casa" aria-label="Apri la tua Casa" ' +
+                'class="w-full bg-white border-2 border-black rounded-2xl p-4 shadow-[4px_4px_0px_#000] hover:bg-neutral-50 active:translate-y-0.5 transition-all cursor-pointer text-left relative overflow-hidden group">' +
+                '<div class="flex items-center justify-between mb-2">' +
+                '<div class="flex items-center gap-2">' +
+                '<div class="w-8 h-8 rounded-lg border-2 border-black bg-neutral-100 flex items-center justify-center">' +
+                '<svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>' +
+                '</div>' +
+                '<div>' +
+                '<span class="text-[10px] font-mono bg-black text-white px-1.5 py-0.5 rounded font-bold uppercase">Zona 1 · Sbloccata</span>' +
+                '<h3 class="text-base font-bold text-black leading-tight mt-0.5">' +
+                escapeHtml(land.name) +
+                '</h3>' +
+                '</div>' +
+                '</div>' +
+                '<div class="flex items-center text-xs font-mono font-bold text-black gap-1 group-hover:translate-x-0.5 transition-transform">' +
+                '<span>Entra</span>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>' +
+                '</div>' +
+                '</div>' +
+                '<p class="text-xs text-neutral-600 mb-3">' +
+                escapeHtml(land.description) +
+                '</p>' +
+                '<div class="w-full h-24 border border-dashed border-black rounded-xl bg-neutral-100 flex items-center justify-center relative overflow-hidden">' +
+                '<svg viewBox="0 0 160 80" class="w-40 h-20 text-neutral-400 stroke-black fill-none" stroke-width="1.5">' +
+                '<polygon points="80,10 145,40 80,70 15,40" fill="#fff" stroke="#000" stroke-width="2"></polygon>' +
+                '<line x1="80" y1="10" x2="80" y2="40" stroke="#000" stroke-dasharray="2 2"></line>' +
+                '<line x1="15" y1="40" x2="80" y2="40" stroke="#000" stroke-dasharray="2 2"></line>' +
+                '<line x1="145" y1="40" x2="80" y2="40" stroke="#000" stroke-dasharray="2 2"></line>' +
+                '</svg>' +
+                '<span class="absolute bottom-1 right-2 text-[9px] font-mono bg-white border border-black px-1 rounded">[VISTA_STANZA_CASA]</span>' +
+                '</div>' +
+                '</button>';
+            } else {
+              const unlocked = land.isUnlocked;
+              html +=
+                '<button type="button" data-land-id="' +
+                land.id +
+                '" aria-label="' +
+                escapeHtml(land.name) +
+                ': ' +
+                (unlocked ? 'Sbloccato' : 'Bloccato, tocca per sbloccare') +
+                '" ' +
+                'class="goland-locked-card w-full border-2 border-black rounded-2xl p-4 shadow-[3px_3px_0px_#000] active:translate-y-0.5 transition-all cursor-pointer text-left relative overflow-hidden ' +
+                (unlocked
+                  ? 'bg-neutral-50 hover:bg-neutral-100'
+                  : 'bg-neutral-100 hover:bg-neutral-200') +
+                '">' +
+                '<div class="flex items-center justify-between mb-2">' +
+                '<span class="text-[10px] font-mono uppercase bg-neutral-200 border border-black px-1.5 py-0.5 rounded font-bold">Zona ' +
+                land.id +
+                ' · ' +
+                (unlocked ? 'SBLOCCATA' : 'BLOCCATA') +
+                '</span>' +
+                (!unlocked
+                  ? '<div class="flex items-center gap-1 text-xs font-mono font-bold text-black"><div class="w-3.5 h-3.5 rounded-full border border-black bg-white flex items-center justify-center text-[9px]">¢</div><span>' +
+                    land.unlockCost +
+                    '</span></div>'
+                  : '') +
+                '</div>' +
+                '<div class="flex items-center justify-between">' +
+                '<div>' +
+                '<h3 class="text-base font-bold text-black">' +
+                escapeHtml(land.name) +
+                '</h3>' +
+                '<p class="text-xs text-neutral-600 mt-0.5">' +
+                escapeHtml(land.description) +
+                '</p>' +
+                '</div>' +
+                '<div class="w-12 h-12 rounded-xl border-2 border-black bg-white flex items-center justify-center shrink-0 ml-3 shadow-[2px_2px_0px_#000]">' +
+                (unlocked
+                  ? '<svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>'
+                  : '<svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>') +
+                '</div>' +
+                '</div>' +
+                (!unlocked
+                  ? '<div class="mt-3 pt-2 border-t border-dashed border-neutral-400 flex items-center justify-between text-[11px] font-mono text-neutral-700"><span>Tocca per comprare e sbloccare</span><span class="font-bold underline">Sblocca ➔</span></div>'
+                  : '') +
+                '</button>';
+            }
+          });
+
+          container.innerHTML = html;
+        }
+
+        function renderCasaPage() {
+          const placed = state.arredi.filter(function (a) {
+            return a.isPlacedInCasa;
+          });
+          document.getElementById('casa-placed-count').textContent =
+            placed.length + ' OGGETTI INSERITI';
+          document.getElementById('casa-arredi-owned-label').textContent =
+            state.arredi.length + ' posseduti';
+
+          const roomEl = document.getElementById('casa-room-items');
+          if (placed.length === 0) {
+            roomEl.innerHTML =
+              '<div class="border-2 border-dashed border-neutral-400 rounded-2xl p-6 text-center bg-white/80">' +
+              '<p class="text-xs font-mono font-bold text-black uppercase">Casa vuota</p>' +
+              '<p class="text-[11px] font-mono text-neutral-500 mt-1 max-w-[200px] mx-auto">Tocca il bottone Arredi o Negozio qui in basso per arredare la tua casa!</p>' +
+              '</div>';
+          } else {
+            let grid = '<div class="grid grid-cols-2 gap-3">';
+            placed.forEach(function (item) {
+              grid +=
+                '<div class="bg-white border-2 border-black rounded-xl p-3 shadow-[2px_2px_0px_#000] flex flex-col items-center text-center">' +
+                '<div class="w-10 h-10 rounded-lg border border-black bg-neutral-100 flex items-center justify-center mb-1.5">' +
+                '<svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>' +
+                '</div>' +
+                '<span class="text-xs font-bold text-black leading-tight">' +
+                escapeHtml(item.name) +
+                '</span>' +
+                '<span class="text-[10px] font-mono text-neutral-500 mt-0.5">Posizionato</span>' +
+                '</div>';
+            });
+            grid += '</div>';
+            roomEl.innerHTML = grid;
+          }
+        }
+
+        function renderArrediPage() {
+          document.getElementById('arredi-count-badge').textContent =
+            state.arredi.length + ' ACQUISTATI';
+          const contentEl = document.getElementById('arredi-content');
+
+          if (state.arredi.length === 0) {
+            contentEl.innerHTML =
+              '<div class="border-2 border-dashed border-black rounded-2xl p-6 text-center bg-neutral-50 my-6">' +
+              '<h3 class="text-sm font-bold text-black uppercase font-mono mb-1">Nessun arredo posseduto</h3>' +
+              '<p class="text-xs text-neutral-600 mb-4 max-w-[240px] mx-auto">Non hai ancora acquistato nessun oggetto nel negozio. Usa le tue monetine per comprarne!</p>' +
+              '<button type="button" id="btn-arredi-go-shop" class="py-2.5 px-4 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#71717a] cursor-pointer">Vai al Negozio</button>' +
+              '</div>';
+            return;
+          }
+
+          let html = '<div class="grid grid-cols-2 gap-3 pt-1">';
+          state.arredi.forEach(function (item) {
+            const isPlaced = !!item.isPlacedInCasa;
+            html +=
+              '<button type="button" data-arredo-id="' +
+              escapeHtml(item.id) +
+              '" aria-label="' +
+              escapeHtml(item.name) +
+              '. ' +
+              (isPlaced
+                ? 'Posizionato in casa. Clicca per toglierlo.'
+                : 'Non posizionato. Clicca per posizionarlo in casa.') +
+              '" ' +
+              'class="arredo-toggle-btn border-2 border-black rounded-2xl p-3 shadow-[3px_3px_0px_#000] active:translate-y-0.5 transition-all cursor-pointer text-center flex flex-col items-center justify-between min-h-[145px] ' +
+              (isPlaced ? 'bg-neutral-100 ring-2 ring-black' : 'bg-white hover:bg-neutral-50') +
+              '">' +
+              '<div class="w-12 h-12 rounded-xl border-2 border-black bg-white flex items-center justify-center mb-2 shadow-[1px_1px_0px_#000]">' +
+              '<svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>' +
+              '</div>' +
+              '<div class="w-full">' +
+              '<h3 class="text-xs font-bold text-black leading-tight line-clamp-1">' +
+              escapeHtml(item.name) +
+              '</h3>' +
+              '<span class="text-[10px] font-mono text-neutral-500 block mt-0.5">Prezzo: ' +
+              item.cost +
+              ' ¢</span>' +
+              '</div>' +
+              '<div class="w-full mt-2 py-1 px-2 rounded-lg border border-black text-[10px] font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1 ' +
+              (isPlaced ? 'bg-black text-white' : 'bg-white text-black') +
+              '">' +
+              (isPlaced ? '<span>✓ Arreda Casa ✓</span>' : '<span>+ Posiziona</span>') +
+              '</div>' +
+              '</button>';
+          });
+          html += '</div>';
+          contentEl.innerHTML = html;
+        }
+
+        function renderNegozioPage() {
+          document.getElementById('negozio-coins-value').textContent =
+            state.profile.coins + ' monete';
+
+          const contentEl = document.getElementById('negozio-content');
+          const footerEl = document.getElementById('negozio-footer-link');
+
+          if (state.negozio.length === 0) {
+            footerEl.classList.add('hidden');
+            contentEl.innerHTML =
+              '<div class="py-20 flex flex-col items-center justify-center text-center">' +
+              '<div class="w-16 h-16 rounded-full border-2 border-black bg-neutral-100 flex items-center justify-center mb-3 shadow-[3px_3px_0px_#000]">' +
+              '<span class="text-2xl font-black">✓</span>' +
+              '</div>' +
+              '<h2 class="text-base font-bold text-black uppercase font-mono tracking-wider">Hai già comprato tutto!</h2>' +
+              '<p class="text-xs font-mono text-neutral-500 mt-1 max-w-[240px]">Tutti gli articoli disponibili sono stati acquistati e trasferiti nella pagina Arredi.</p>' +
+              '<button type="button" id="btn-negozio-empty-arredi" class="mt-5 py-2.5 px-4 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#71717a] cursor-pointer">Vai alla pagina Arredi</button>' +
+              '</div>';
+            return;
+          }
+
+          footerEl.classList.remove('hidden');
+          let html = '<div class="space-y-3">';
+          state.negozio.forEach(function (item) {
+            const canAfford = state.profile.coins >= item.cost;
+            html +=
+              '<div class="w-full bg-white border-2 border-black rounded-2xl p-3 shadow-[3px_3px_0px_#000] flex items-center justify-between gap-3">' +
+              '<div class="w-12 h-12 rounded-xl border-2 border-black bg-neutral-100 flex items-center justify-center shrink-0">' +
+              '<svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>' +
+              '</div>' +
+              '<div class="flex-1 min-w-0">' +
+              '<h3 class="text-xs font-bold text-black leading-snug">' +
+              escapeHtml(item.name) +
+              '</h3>' +
+              '<div class="flex items-center gap-1 text-xs font-mono font-bold text-neutral-700 mt-0.5">' +
+              '<div class="w-3 h-3 rounded-full border border-black bg-white flex items-center justify-center text-[8px]">¢</div>' +
+              '<span>Prezzo: ' +
+              item.cost +
+              ' monetine</span>' +
+              '</div>' +
+              '</div>' +
+              '<button type="button" data-buy-id="' +
+              escapeHtml(item.id) +
+              '" aria-label="Compra ' +
+              escapeHtml(item.name) +
+              ' per ' +
+              item.cost +
+              ' monete" ' +
+              'class="shop-buy-btn py-2 px-3 rounded-xl border-2 border-black text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer ' +
+              (canAfford
+                ? 'bg-black text-white hover:bg-neutral-800 shadow-[2px_2px_0px_#71717a] active:translate-y-0.5'
+                : 'bg-neutral-200 text-neutral-500 border-neutral-400 cursor-not-allowed') +
+              '">Compra</button>' +
+              '</div>';
+          });
+          html += '</div>';
+          contentEl.innerHTML = html;
+        }
+
+        function renderDiarioPage() {
+          document.getElementById('diario-count-badge').textContent =
+            state.diaryEntries.length + ' COMPLETATE';
+          const gridEl = document.getElementById('diario-grid');
+
+          if (state.diaryEntries.length === 0) {
+            gridEl.innerHTML =
+              '<div class="border-2 border-dashed border-black rounded-2xl p-6 text-center bg-neutral-50 my-6">' +
+              '<h3 class="text-sm font-bold text-black uppercase font-mono mb-1">Nessuna sfida completata</h3>' +
+              '<p class="text-xs text-neutral-600 max-w-[240px] mx-auto">Accetta una sfida dalla pagina "Sfide", scatta una foto e comparirà qui nel tuo Diario!</p>' +
+              '</div>';
+            return;
+          }
+
+          let html = '<div class="grid grid-cols-2 gap-3.5 pt-1">';
+          state.diaryEntries.forEach(function (entry) {
+            const isCoffee = entry.title.toLowerCase().indexOf('caffè') !== -1;
+            html +=
+              '<button type="button" data-diary-id="' +
+              escapeHtml(entry.id) +
+              '" aria-label="Apri dettaglio sfida: ' +
+              escapeHtml(entry.title) +
+              '" ' +
+              'class="diary-entry-card aspect-square bg-white border-2 border-black rounded-2xl p-3 shadow-[3px_3px_0px_#000] hover:bg-neutral-50 active:translate-y-0.5 transition-all cursor-pointer flex flex-col justify-between text-left group">' +
+              '<div class="w-full flex-1 rounded-xl border border-black bg-neutral-100 overflow-hidden flex flex-col items-center justify-center relative p-1.5">' +
+              (isCoffee
+                ? '<svg viewBox="0 0 100 80" class="w-12 h-10 stroke-black fill-none" stroke-width="2"><ellipse cx="50" cy="25" rx="20" ry="6" fill="#fff"></ellipse><path d="M30 25 L 35 60 Q 50 68, 65 60 L 70 25" fill="#fff"></path><path d="M70 30 Q 82 35, 80 48 Q 78 56, 66 54"></path><ellipse cx="50" cy="65" rx="30" ry="8" fill="#fff"></ellipse></svg>'
+                : '<svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><span class="text-[9px] font-mono text-neutral-500 mt-1 uppercase">[FOTO_SFIDA]</span>') +
+              '<div class="absolute top-1 left-1 bg-black text-white text-[8px] font-mono px-1 rounded">RAW</div>' +
+              '</div>' +
+              '<div class="mt-2 w-full">' +
+              '<h3 class="text-xs font-bold text-black leading-snug line-clamp-2">' +
+              escapeHtml(entry.title) +
+              '</h3>' +
+              '<div class="flex items-center justify-between text-[10px] font-mono text-neutral-500 mt-0.5">' +
+              '<span>' +
+              escapeHtml(entry.completedAt) +
+              '</span>' +
+              '<span class="font-bold text-black">+' +
+              entry.rewardCoins +
+              ' ¢</span>' +
+              '</div>' +
+              '</div>' +
+              '</button>';
+          });
+          html += '</div>';
+          gridEl.innerHTML = html;
+        }
+
+        function renderDettaglioSfidaPage() {
+          const entry =
+            state.diaryEntries.find(function (d) {
+              return d.id === state.selectedDiaryEntryId;
+            }) || state.diaryEntries[0];
+          const container = document.getElementById('dettaglio-sfida-content');
+          if (!entry) {
+            container.innerHTML = '';
+            return;
+          }
+
+          const isCoffee = entry.title.toLowerCase().indexOf('caffè') !== -1;
+          const photoHtml = isCoffee
+            ? '<div class="relative bg-neutral-50 border-2 border-black rounded-xl flex items-center justify-center p-4 overflow-hidden w-full h-64 shadow-[4px_4px_0px_#000]">' +
+              '<div class="absolute inset-0 opacity-15 wireframe-coffee-grid"></div>' +
+              '<svg viewBox="0 0 200 160" class="w-48 h-40 text-black stroke-black fill-none relative z-10" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+              '<path d="M85 30 Q 80 15, 88 5" stroke-dasharray="3 3"></path>' +
+              '<path d="M100 28 Q 105 12, 98 4" stroke-dasharray="3 3"></path>' +
+              '<path d="M115 32 Q 110 16, 118 6" stroke-dasharray="3 3"></path>' +
+              '<ellipse cx="100" cy="45" rx="38" ry="12" fill="#fff"></ellipse>' +
+              '<ellipse cx="100" cy="46" rx="34" ry="9" fill="#18181b"></ellipse>' +
+              '<path d="M78 46 Q 100 50, 122 46" stroke="#fff" stroke-width="1.5"></path>' +
+              '<path d="M62 45 L 72 105 Q 100 120, 128 105 L 138 45" fill="#fff"></path>' +
+              '<path d="M136 55 Q 162 65, 155 85 Q 148 100, 126 98" fill="none"></path>' +
+              '<path d="M134 62 Q 152 70, 147 84 Q 142 94, 126 93" fill="none" stroke-width="1.5"></path>' +
+              '<line x1="78" y1="65" x2="88" y2="95" stroke-width="1" stroke-dasharray="2 3"></line>' +
+              '<line x1="84" y1="65" x2="94" y2="95" stroke-width="1" stroke-dasharray="2 3"></line>' +
+              '<ellipse cx="100" cy="115" rx="65" ry="16" fill="#fff"></ellipse>' +
+              '<ellipse cx="100" cy="115" rx="55" ry="12" fill="none" stroke-dasharray="4 2"></ellipse>' +
+              '<ellipse cx="45" cy="122" rx="7" ry="5" transform="rotate(-25 45 122)" fill="#18181b"></ellipse>' +
+              '<ellipse cx="155" cy="124" rx="6" ry="4" transform="rotate(30 155 124)" fill="#18181b"></ellipse>' +
+              '</svg>' +
+              '<div class="absolute bottom-2 right-2 bg-black text-white text-[10px] font-mono px-2 py-0.5 rounded">FOTO_VERIFICATA_#0815.RAW</div>' +
+              '</div>'
+            : '<div class="relative bg-neutral-100 border-2 border-black rounded-xl flex flex-col items-center justify-center p-4 overflow-hidden w-full h-64 shadow-[4px_4px_0px_#000]">' +
+              '<svg viewBox="0 0 100 80" class="w-20 h-16 text-black stroke-black fill-none mb-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+              '<rect x="5" y="10" width="90" height="60" rx="4" fill="#fff"></rect>' +
+              '<circle cx="30" cy="28" r="8" fill="none" stroke-width="2"></circle>' +
+              '<path d="M10 65 L 40 38 L 65 65"></path>' +
+              '<path d="M50 65 L 75 46 L 90 65"></path>' +
+              '<line x1="5" y1="65" x2="95" y2="65" stroke-width="2"></line>' +
+              '</svg>' +
+              '<span class="text-xs font-mono font-bold uppercase tracking-wider text-black bg-white px-2 py-0.5 border border-black rounded">' +
+              escapeHtml(entry.title) +
+              '</span>' +
+              '<span class="text-[10px] font-mono text-neutral-500 mt-1">[PROVA_FOTOGRAFICA_SFIDA]</span>' +
+              '</div>';
+
+          container.innerHTML =
+            '<div class="flex items-center justify-between border-b-2 border-black pb-2 mb-4">' +
+            '<span class="text-xs font-mono font-bold uppercase tracking-wider text-black">✓ SFIDA COMPLETATA CON SUCCESSO</span>' +
+            '<span class="text-[10px] font-mono border border-black bg-neutral-100 px-1.5 py-0.5 rounded font-bold">+' +
+            entry.rewardCoins +
+            ' MONETINE</span>' +
+            '</div>' +
+            '<div class="space-y-1.5 mb-4">' +
+            '<div class="flex items-center justify-between">' +
+            '<span class="text-[10px] font-mono text-neutral-600 uppercase">Allegato Fotografico Ufficiale</span>' +
+            '<span class="text-[10px] font-mono text-neutral-500">' +
+            escapeHtml(entry.completedAt) +
+            '</span>' +
+            '</div>' +
+            photoHtml +
+            '</div>' +
+            '<div class="border-2 border-black rounded-2xl p-4 bg-neutral-50 shadow-[3px_3px_0px_#000] space-y-3">' +
+            '<div>' +
+            '<span class="text-[10px] font-mono uppercase bg-black text-white px-2 py-0.5 rounded font-bold">SPIEGAZIONE DELLA SFIDA</span>' +
+            '<h2 class="text-base font-bold text-black mt-2 leading-snug">' +
+            escapeHtml(entry.title) +
+            '</h2>' +
+            '</div>' +
+            '<p class="text-xs text-neutral-700 leading-relaxed font-normal border-l-2 border-black pl-3 py-1 bg-white">' +
+            escapeHtml(entry.description) +
+            '</p>' +
+            '<div class="pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between text-xs font-mono">' +
+            '<span class="text-neutral-600">Completata: ' +
+            escapeHtml(entry.completedAt) +
+            '</span>' +
+            '<span class="font-bold">Verificata ✓</span>' +
+            '</div>' +
+            '</div>';
+        }
+
+        function renderProfiloPage() {
+          document.getElementById('profilo-card-userid').textContent =
+            'ID: ' + state.profile.userId;
+          document.getElementById('profilo-card-username').textContent =
+            state.profile.username;
+          document.getElementById('profilo-card-bio').textContent =
+            state.profile.bio || 'Nessuna bio impostata';
+          document.getElementById('profilo-card-coins').textContent = String(
+            state.profile.coins
+          );
+          document.getElementById('profilo-card-completed').textContent = String(
+            state.profile.completedChallengesCount
+          );
+
+          // Sync Dati inputs
+          document.getElementById('username-input').value =
+            state.profile.username;
+          document.getElementById('userid-input').value = state.profile.userId;
+          document.getElementById('bio-input').value = state.profile.bio || '';
+        }
+
+        function renderPreferenzePage() {
+          document.getElementById('preferenze-count-badge').textContent =
+            state.preferences.hobbies.length + ' SCELTI';
+
+          const hobbiesEl = document.getElementById('preferenze-hobbies-list');
+          let hHtml = '';
+          AVAILABLE_HOBBIES.forEach(function (h) {
+            const active = state.preferences.hobbies.indexOf(h) !== -1;
+            hHtml +=
+              '<button type="button" data-hobby="' +
+              escapeHtml(h) +
+              '" aria-pressed="' +
+              active +
+              '" class="pref-hobby-btn py-1.5 px-3 rounded-xl border-2 border-black text-xs font-mono transition-all cursor-pointer ' +
+              (active
+                ? 'bg-black text-white font-bold shadow-[2px_2px_0px_#52525b]'
+                : 'bg-white text-black hover:bg-neutral-100 font-medium') +
+              '">' +
+              (active ? '✓ ' : '') +
+              escapeHtml(h) +
+              '</button>';
+          });
+          hobbiesEl.innerHTML = hHtml;
+
+          const lifeEl = document.getElementById('preferenze-lifestyle-list');
+          let lHtml = '';
+          AVAILABLE_LIFESTYLE.forEach(function (l) {
+            const active = state.preferences.lifestyle.indexOf(l) !== -1;
+            lHtml +=
+              '<button type="button" data-lifestyle="' +
+              escapeHtml(l) +
+              '" aria-pressed="' +
+              active +
+              '" class="pref-life-btn py-1.5 px-3 rounded-xl border-2 border-black text-xs font-mono transition-all cursor-pointer ' +
+              (active
+                ? 'bg-black text-white font-bold shadow-[2px_2px_0px_#52525b]'
+                : 'bg-white text-black hover:bg-neutral-100 font-medium') +
+              '">' +
+              (active ? '✓ ' : '') +
+              escapeHtml(l) +
+              '</button>';
+          });
+          lifeEl.innerHTML = lHtml;
+
+          const intEl = document.getElementById('preferenze-intensity-list');
+          let iHtml = '';
+          ['bassa', 'media', 'alta'].forEach(function (lvl) {
+            const active = state.preferences.challengeIntensity === lvl;
+            iHtml +=
+              '<button type="button" data-intensity="' +
+              lvl +
+              '" class="pref-int-btn py-2 rounded-xl border-2 border-black text-xs font-mono uppercase tracking-wider font-bold transition-all cursor-pointer ' +
+              (active
+                ? 'bg-black text-white shadow-[2px_2px_0px_#52525b]'
+                : 'bg-neutral-50 text-black hover:bg-neutral-100') +
+              '">' +
+              lvl +
+              '</button>';
+          });
+          intEl.innerHTML = iHtml;
+        }
+
+        function renderNotifichePage() {
+          const container = document.getElementById('notifiche-switches');
+          const items = [
+            {
+              key: 'dailyReminders',
+              title: 'Promemoria Quotidiano Sfide',
+              desc: 'Ricevi un avviso per ricordarti di completare la sfida del giorno.',
+            },
+            {
+              key: 'challengeDeadlines',
+              title: 'Avviso Scadenze Settimanali',
+              desc: 'Notifica 6 ore prima della fine della settimana o mese.',
+            },
+            {
+              key: 'unlockAlerts',
+              title: 'Avviso Monete e Sblocchi',
+              desc: 'Notifica quando hai abbastanza monetine per un nuovo terreno.',
+            },
+          ];
+
+          let html = '';
+          items.forEach(function (item) {
+            const checked = !!state.notifications[item.key];
+            html +=
+              '<div class="flex items-center justify-between p-3 border-2 border-black rounded-2xl bg-white shadow-[2px_2px_0px_#000]">' +
+              '<div class="pr-2">' +
+              '<h3 class="text-xs font-bold text-black font-mono uppercase tracking-wider">' +
+              item.title +
+              '</h3>' +
+              '<p class="text-[11px] text-neutral-600">' +
+              item.desc +
+              '</p>' +
+              '</div>' +
+              '<button type="button" role="switch" aria-checked="' +
+              checked +
+              '" data-notif-key="' +
+              item.key +
+              '" class="notif-switch-btn w-12 h-6 border-2 border-black rounded-full transition-colors relative cursor-pointer shrink-0 ' +
+              (checked ? 'bg-black' : 'bg-neutral-200') +
+              '">' +
+              '<div class="w-4 h-4 rounded-full border border-black bg-white absolute top-0.5 transition-transform ' +
+              (checked ? 'right-0.5' : 'left-0.5') +
+              '"></div>' +
+              '</button>' +
+              '</div>';
+          });
+          container.innerHTML = html;
+          document.getElementById('reminder-time-input').value =
+            state.notifications.notificationTime;
+        }
+
+        function renderAll() {
+          renderChrome();
+          renderSfidePage();
+          renderGoLandPage();
+          renderCasaPage();
+          renderArrediPage();
+          renderNegozioPage();
+          renderDiarioPage();
+          renderDettaglioSfidaPage();
+          renderProfiloPage();
+          renderPreferenzePage();
+          renderNotifichePage();
+        }
+
+        /* =========================================================
+         * 4. MODALS LOGIC
+         * ========================================================= */
+        let detailErrorMode = false;
+
+        function openChallengeDetailModal(challengeId) {
+          const ch = state.challenges.find(function (c) {
+            return c.id === challengeId;
+          });
+          if (!ch) return;
+          state.selectedAvailableChallengeId = challengeId;
+          detailErrorMode = false;
+
+          document.getElementById('modal-challenge-cat').textContent =
+            'POP-UP // ' + ch.category.toUpperCase();
+          document.getElementById('modal-challenge-title').textContent =
+            ch.title;
+          document.getElementById('modal-challenge-desc').textContent =
+            ch.description;
+          document.getElementById('modal-challenge-reward').textContent =
+            '+' + ch.rewardCoins + ' monetine';
+
+          document.getElementById('btn-toggle-popup-error').textContent =
+            'Simula Errore';
+          document.getElementById('popup-error-view').classList.add('hidden');
+          document.getElementById('popup-error-view').classList.remove('flex');
+          document.getElementById('popup-normal-view').classList.remove('hidden');
+
+          document
+            .getElementById('btn-accept-challenge')
+            .classList.remove('hidden');
+          document
+            .getElementById('accepted-feedback-badge')
+            .classList.add('hidden');
+          document
+            .getElementById('accepted-feedback-badge')
+            .classList.remove('flex');
+
+          const modal = document.getElementById('modal-challenge-detail');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+
+        function closeChallengeDetailModal() {
+          state.selectedAvailableChallengeId = null;
+          const modal = document.getElementById('modal-challenge-detail');
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+
+        function openAcceptedChallengeModal(challengeId) {
+          const ch = state.challenges.find(function (c) {
+            return c.id === challengeId;
+          });
+          if (!ch) return;
+          state.selectedAcceptedChallengeId = challengeId;
+
+          document.getElementById('modal-accepted-title').textContent = ch.title;
+          document.getElementById('modal-accepted-desc').textContent =
+            ch.description;
+          document.getElementById('confirm-completion-label').textContent =
+            'Conferma e guadagna +' + ch.rewardCoins + ' monete';
+
+          document.getElementById('accepted-cancel-view').classList.add('hidden');
+          document.getElementById('accepted-cancel-view').classList.remove('flex');
+          document.getElementById('accepted-main-view').classList.remove('hidden');
+
+          document
+            .getElementById('accepted-step-actions')
+            .classList.remove('hidden');
+          document
+            .getElementById('accepted-step-camera')
+            .classList.add('hidden');
+          document
+            .getElementById('accepted-step-confirm')
+            .classList.add('hidden');
+
+          const modal = document.getElementById('modal-accepted-challenge');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+
+        function closeAcceptedChallengeModal() {
+          state.selectedAcceptedChallengeId = null;
+          const modal = document.getElementById('modal-accepted-challenge');
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+
+        function openUnlockLandModal(landId) {
+          const land = state.lands.find(function (l) {
+            return l.id === landId;
+          });
+          if (!land) return;
+          state.selectedLockedLandId = landId;
+
+          document.getElementById('modal-unlock-title').textContent = land.name;
+          document.getElementById('modal-unlock-desc').textContent =
+            land.description;
+          document.getElementById('modal-unlock-cost').textContent =
+            land.unlockCost + ' monete';
+
+          const actionsEl = document.getElementById('modal-unlock-actions');
+          if (land.isUnlocked) {
+            actionsEl.innerHTML =
+              '<div class="py-2.5 bg-neutral-100 border-2 border-black rounded-xl text-xs font-mono font-bold uppercase">Terreno già sbloccato!</div>';
+          } else if (state.profile.coins >= land.unlockCost) {
+            actionsEl.innerHTML =
+              '<button type="button" id="btn-confirm-unlock-land" class="w-full py-2.5 bg-black text-white hover:bg-neutral-800 border-2 border-black rounded-xl font-bold text-xs uppercase tracking-wider shadow-[3px_3px_0px_#52525b] active:translate-y-0.5 cursor-pointer">Compra e sblocca ora</button>';
+          } else {
+            actionsEl.innerHTML =
+              '<button type="button" disabled class="w-full py-2.5 bg-neutral-300 text-neutral-600 border-2 border-neutral-400 rounded-xl font-bold text-xs uppercase tracking-wider cursor-not-allowed mb-2">Monete insufficienti</button>' +
+              '<p class="text-[10px] font-mono text-neutral-500">Ti mancano ' +
+              (land.unlockCost - state.profile.coins) +
+              ' monetine. Completa altre sfide!</p>';
+          }
+
+          const modal = document.getElementById('modal-unlock-land');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+
+        function closeUnlockLandModal() {
+          state.selectedLockedLandId = null;
+          const modal = document.getElementById('modal-unlock-land');
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+
+        /* =========================================================
+         * 5. EVENT DELEGATION & HANDLERS
+         * ========================================================= */
+        // Top workbench actions
+        document
+          .getElementById('btn-zoom-toggle')
+          .addEventListener('click', function () {
+            state.zoomFit = !state.zoomFit;
+            const wrapper = document.getElementById('phone-scale-wrapper');
+            const label = document.getElementById('zoom-label');
+            const zIn = document.getElementById('icon-zoom-in');
+            const zOut = document.getElementById('icon-zoom-out');
+            if (state.zoomFit) {
+              wrapper.className =
+                'relative z-10 transition-transform origin-top scale-[0.78] sm:scale-[0.80]';
+              label.textContent = 'Zoom 100%';
+              zIn.classList.remove('hidden');
+              zOut.classList.add('hidden');
+            } else {
+              wrapper.className =
+                'relative z-10 transition-transform origin-top scale-100';
+              label.textContent = 'Adatta Schermo';
+              zIn.classList.add('hidden');
+              zOut.classList.remove('hidden');
+            }
+          });
+
+        document
+          .getElementById('btn-reset-demo')
+          .addEventListener('click', function () {
+            state = createInitialState();
+            renderAll();
+          });
+
+        // Quick nav bar
+        document
+          .getElementById('quick-nav-bar')
+          .addEventListener('click', function (e) {
+            const btn = e.target.closest('.quick-nav-btn');
+            if (!btn) return;
+            const page = btn.getAttribute('data-nav');
+            if (page) navigateTo(page);
+          });
+
+        // TopBar back button
+        document
+          .getElementById('topbar-back-btn')
+          .addEventListener('click', navigateBack);
+
+        // Bottom nav bar
+        document
+          .getElementById('bottom-nav-bar')
+          .addEventListener('click', function (e) {
+            const btn = e.target.closest('.bottom-tab-btn');
+            if (!btn) return;
+            const tab = btn.getAttribute('data-tab');
+            if (tab) navigateTo(tab);
+          });
+
+        // Sfide page clicks
+        document
+          .getElementById('page-sfide')
+          .addEventListener('click', function (e) {
+            const availBtn = e.target.closest('.sfida-available-card');
+            if (availBtn) {
+              openChallengeDetailModal(availBtn.getAttribute('data-available-id'));
+              return;
+            }
+            const accBtn = e.target.closest('.sfida-accepted-card');
+            if (accBtn) {
+              openAcceptedChallengeModal(accBtn.getAttribute('data-accepted-id'));
+            }
+          });
+
+        // GoLand page clicks
+        document
+          .getElementById('page-goland')
+          .addEventListener('click', function (e) {
+            if (e.target.closest('#btn-goland-open-casa')) {
+              navigateTo('casa');
+              return;
+            }
+            const lockedBtn = e.target.closest('.goland-locked-card');
+            if (lockedBtn) {
+              openUnlockLandModal(Number(lockedBtn.getAttribute('data-land-id')));
+            }
+          });
+
+        // Casa bottom buttons
+        document
+          .getElementById('btn-casa-arredi')
+          .addEventListener('click', function () {
+            navigateTo('arredi');
+          });
+        document
+          .getElementById('btn-casa-negozio')
+          .addEventListener('click', function () {
+            navigateTo('negozio');
+          });
+
+        // Arredi clicks
+        document
+          .getElementById('page-arredi')
+          .addEventListener('click', function (e) {
+            if (e.target.closest('#btn-arredi-go-shop')) {
+              navigateTo('negozio');
+              return;
+            }
+            const toggleBtn = e.target.closest('.arredo-toggle-btn');
+            if (toggleBtn) {
+              const id = toggleBtn.getAttribute('data-arredo-id');
+              state.arredi = state.arredi.map(function (a) {
+                return a.id === id
+                  ? Object.assign({}, a, { isPlacedInCasa: !a.isPlacedInCasa })
+                  : a;
+              });
+              renderAll();
+            }
+          });
+
+        // Negozio clicks
+        let negozioTimer = null;
+        document
+          .getElementById('page-negozio')
+          .addEventListener('click', function (e) {
+            if (
+              e.target.closest('#btn-negozio-to-arredi') ||
+              e.target.closest('#btn-negozio-empty-arredi')
+            ) {
+              navigateTo('arredi');
+              return;
+            }
+            const buyBtn = e.target.closest('.shop-buy-btn');
+            if (!buyBtn) return;
+
+            const itemId = buyBtn.getAttribute('data-buy-id');
+            const item = state.negozio.find(function (i) {
+              return i.id === itemId;
+            });
+            if (!item) return;
+
+            const feedbackEl = document.getElementById('negozio-feedback');
+            if (state.profile.coins < item.cost) {
+              feedbackEl.textContent =
+                'Monete insufficienti! Ti servono ' +
+                item.cost +
+                ' monete, ne hai ' +
+                state.profile.coins +
+                '.';
+            } else {
+              state.profile.coins -= item.cost;
+              state.negozio = state.negozio.filter(function (i) {
+                return i.id !== itemId;
+              });
+              state.arredi.push({
+                id: item.id,
+                name: item.name,
+                cost: item.cost,
+                isPlacedInCasa: false,
+              });
+              feedbackEl.textContent = '✓ Hai acquistato: ' + item.name + '!';
+            }
+
+            feedbackEl.classList.remove('hidden');
+            feedbackEl.classList.add('flex');
+            if (negozioTimer) clearTimeout(negozioTimer);
+            negozioTimer = setTimeout(function () {
+              feedbackEl.classList.add('hidden');
+              feedbackEl.classList.remove('flex');
+            }, 2200);
+
+            renderAll();
+          });
+
+        // Diario clicks
+        document
+          .getElementById('page-diario')
+          .addEventListener('click', function (e) {
+            const card = e.target.closest('.diary-entry-card');
+            if (!card) return;
+            state.selectedDiaryEntryId = card.getAttribute('data-diary-id');
+            navigateTo('dettaglio_sfida');
+          });
+
+        // Profilo clicks
+        document
+          .getElementById('btn-open-dati')
+          .addEventListener('click', function () {
+            navigateTo('dati');
+          });
+        document
+          .getElementById('btn-open-preferenze')
+          .addEventListener('click', function () {
+            navigateTo('preferenze');
+          });
+        document
+          .getElementById('btn-open-notifiche')
+          .addEventListener('click', function () {
+            navigateTo('notifiche');
+          });
+
+        // Dati form submit
+        document
+          .getElementById('dati-form')
+          .addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username =
+              document.getElementById('username-input').value.trim() ||
+              state.profile.username;
+            let userId = document.getElementById('userid-input').value.trim();
+            if (userId && userId.charAt(0) !== '@') userId = '@' + userId;
+            const bio = document.getElementById('bio-input').value.trim();
+
+            state.profile.username = username;
+            state.profile.userId = userId || state.profile.userId;
+            state.profile.bio = bio;
+
+            renderProfiloPage();
+            const banner = document.getElementById('dati-saved-banner');
+            banner.classList.remove('hidden');
+            banner.classList.add('flex');
+            setTimeout(function () {
+              banner.classList.add('hidden');
+              banner.classList.remove('flex');
+            }, 2200);
+          });
+
+        // Preferenze clicks
+        document
+          .getElementById('page-preferenze')
+          .addEventListener('click', function (e) {
+            const hBtn = e.target.closest('.pref-hobby-btn');
+            if (hBtn) {
+              const val = hBtn.getAttribute('data-hobby');
+              if (state.preferences.hobbies.indexOf(val) !== -1) {
+                state.preferences.hobbies = state.preferences.hobbies.filter(
+                  function (x) {
+                    return x !== val;
+                  }
+                );
+              } else {
+                state.preferences.hobbies.push(val);
+              }
+              renderPreferenzePage();
+              return;
+            }
+            const lBtn = e.target.closest('.pref-life-btn');
+            if (lBtn) {
+              const val = lBtn.getAttribute('data-lifestyle');
+              if (state.preferences.lifestyle.indexOf(val) !== -1) {
+                state.preferences.lifestyle = state.preferences.lifestyle.filter(
+                  function (x) {
+                    return x !== val;
+                  }
+                );
+              } else {
+                state.preferences.lifestyle.push(val);
+              }
+              renderPreferenzePage();
+              return;
+            }
+            const iBtn = e.target.closest('.pref-int-btn');
+            if (iBtn) {
+              state.preferences.challengeIntensity =
+                iBtn.getAttribute('data-intensity');
+              renderPreferenzePage();
+            }
+          });
+
+        document
+          .getElementById('btn-save-preferenze')
+          .addEventListener('click', function () {
+            const banner = document.getElementById('preferenze-saved-banner');
+            banner.classList.remove('hidden');
+            banner.classList.add('flex');
+            setTimeout(function () {
+              banner.classList.add('hidden');
+              banner.classList.remove('flex');
+            }, 2200);
+          });
+
+        // Notifiche clicks
+        document
+          .getElementById('page-notifiche')
+          .addEventListener('click', function (e) {
+            const sw = e.target.closest('.notif-switch-btn');
+            if (sw) {
+              const key = sw.getAttribute('data-notif-key');
+              state.notifications[key] = !state.notifications[key];
+              renderNotifichePage();
+            }
+          });
+
+        document
+          .getElementById('btn-save-notifiche')
+          .addEventListener('click', function () {
+            state.notifications.notificationTime =
+              document.getElementById('reminder-time-input').value || '08:30';
+            const banner = document.getElementById('notifiche-saved-banner');
+            banner.classList.remove('hidden');
+            banner.classList.add('flex');
+            setTimeout(function () {
+              banner.classList.add('hidden');
+              banner.classList.remove('flex');
+            }, 2200);
+          });
+
+        // Modal 1 handlers
+        document
+          .getElementById('btn-close-detail-modal')
+          .addEventListener('click', closeChallengeDetailModal);
+
+        document
+          .getElementById('btn-toggle-popup-error')
+          .addEventListener('click', function () {
+            detailErrorMode = !detailErrorMode;
+            const errView = document.getElementById('popup-error-view');
+            const normView = document.getElementById('popup-normal-view');
+            const toggleBtn = document.getElementById('btn-toggle-popup-error');
+            if (detailErrorMode) {
+              toggleBtn.textContent = 'Ripristina';
+              errView.classList.remove('hidden');
+              errView.classList.add('flex');
+              normView.classList.add('hidden');
+            } else {
+              toggleBtn.textContent = 'Simula Errore';
+              errView.classList.add('hidden');
+              errView.classList.remove('flex');
+              normView.classList.remove('hidden');
+            }
+          });
+
+        document
+          .getElementById('btn-popup-retry')
+          .addEventListener('click', function () {
+            const spinIcon = document.getElementById('icon-retry-spin');
+            spinIcon.classList.add('animate-spin-once');
+            setTimeout(function () {
+              spinIcon.classList.remove('animate-spin-once');
+              detailErrorMode = false;
+              document.getElementById('btn-toggle-popup-error').textContent =
+                'Simula Errore';
+              document.getElementById('popup-error-view').classList.add('hidden');
+              document
+                .getElementById('popup-error-view')
+                .classList.remove('flex');
+              document
+                .getElementById('popup-normal-view')
+                .classList.remove('hidden');
+            }, 450);
+          });
+
+        document
+          .getElementById('btn-accept-challenge')
+          .addEventListener('click', function () {
+            const id = state.selectedAvailableChallengeId;
+            if (!id) return;
+            document
+              .getElementById('btn-accept-challenge')
+              .classList.add('hidden');
+            const badge = document.getElementById('accepted-feedback-badge');
+            badge.classList.remove('hidden');
+            badge.classList.add('flex');
+
+            setTimeout(function () {
+              state.challenges = state.challenges.map(function (c) {
+                return c.id === id
+                  ? Object.assign({}, c, { status: 'accepted' })
+                  : c;
+              });
+              closeChallengeDetailModal();
+              renderAll();
+            }, 900);
+          });
+
+        // Modal 2 handlers
+        document
+          .getElementById('btn-close-accepted-modal')
+          .addEventListener('click', closeAcceptedChallengeModal);
+
+        document
+          .getElementById('btn-cancel-accepted')
+          .addEventListener('click', function () {
+            const id = state.selectedAcceptedChallengeId;
+            if (!id) return;
+            document
+              .getElementById('accepted-main-view')
+              .classList.add('hidden');
+            const cancelView = document.getElementById('accepted-cancel-view');
+            cancelView.classList.remove('hidden');
+            cancelView.classList.add('flex');
+
+            setTimeout(function () {
+              state.challenges = state.challenges.map(function (c) {
+                return c.id === id
+                  ? Object.assign({}, c, { status: 'available' })
+                  : c;
+              });
+              closeAcceptedChallengeModal();
+              renderAll();
+            }, 950);
+          });
+
+        document
+          .getElementById('btn-open-camera')
+          .addEventListener('click', function () {
+            document
+              .getElementById('accepted-step-actions')
+              .classList.add('hidden');
+            document
+              .getElementById('accepted-step-camera')
+              .classList.remove('hidden');
+          });
+
+        document
+          .getElementById('btn-cancel-camera')
+          .addEventListener('click', function () {
+            document
+              .getElementById('accepted-step-camera')
+              .classList.add('hidden');
+            document
+              .getElementById('accepted-step-actions')
+              .classList.remove('hidden');
+          });
+
+        document
+          .getElementById('btn-snap-photo')
+          .addEventListener('click', function () {
+            document
+              .getElementById('accepted-step-camera')
+              .classList.add('hidden');
+            document
+              .getElementById('accepted-step-confirm')
+              .classList.remove('hidden');
+          });
+
+        document
+          .getElementById('btn-confirm-completion')
+          .addEventListener('click', function () {
+            const id = state.selectedAcceptedChallengeId;
+            const target = state.challenges.find(function (c) {
+              return c.id === id;
+            });
+            if (!target) return;
+
+            state.challenges = state.challenges.map(function (c) {
+              return c.id === id
+                ? Object.assign({}, c, { status: 'completed' })
+                : c;
+            });
+            state.profile.coins += target.rewardCoins;
+            state.profile.completedChallengesCount += 1;
+            state.diaryEntries.unshift({
+              id: 'diary-' + Date.now() + '-' + target.id,
+              challengeId: target.id,
+              title: target.title,
+              description: target.description,
+              completedAt: 'Oggi',
+              rewardCoins: target.rewardCoins,
+            });
+
+            closeAcceptedChallengeModal();
+            renderAll();
+          });
+
+        // Modal 3 handlers
+        document
+          .getElementById('btn-close-unlock-modal')
+          .addEventListener('click', closeUnlockLandModal);
+
+        document
+          .getElementById('modal-unlock-actions')
+          .addEventListener('click', function (e) {
+            if (!e.target.closest('#btn-confirm-unlock-land')) return;
+            const landId = state.selectedLockedLandId;
+            const land = state.lands.find(function (l) {
+              return l.id === landId;
+            });
+            if (
+              !land ||
+              land.isUnlocked ||
+              state.profile.coins < land.unlockCost
+            ) {
+              return;
+            }
+            state.profile.coins -= land.unlockCost;
+            state.lands = state.lands.map(function (l) {
+              return l.id === landId
+                ? Object.assign({}, l, { isUnlocked: true })
+                : l;
+            });
+            closeUnlockLandModal();
+            renderAll();
+          });
+
+        // Initial render
+        renderAll();
+      })();
+    </script>
   </body>
 </html>
-
